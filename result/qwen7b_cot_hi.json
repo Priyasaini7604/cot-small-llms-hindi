@@ -1,0 +1,1620 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_tag": "qwen7b",
+  "strategy": "cot",
+  "lang": "hi",
+  "n": 200,
+  "accuracy": 0.675,
+  "correct": 135,
+  "settings": {
+    "seed": 42,
+    "max_new_tokens": 512,
+    "batch_size": 4,
+    "sc_samples": 5,
+    "sc_temp": 0.7,
+    "4bit": true
+  },
+  "seconds": 2613,
+  "items": [
+    {
+      "id": 0,
+      "output": "让我们逐步分析这个问题：\n\n1. **每天产生的鸡蛋数量**：16个鸡蛋。\n2. **每天食用的鸡蛋数量**：3个鸡蛋。\n3. **每天用于制作蛋糕的鸡蛋数量**：4个鸡蛋。\n4. **每天剩余的鸡蛋数量**：\\(16 - 3 - 4 = 9\\)个鸡蛋。\n5. **每个鸡蛋的售价**：$2。\n\n现在我们计算每天在市场上的收入：\n\\[ 9 \\text{个鸡蛋} \\times \\$2/\\text{个鸡蛋} = \\$18 \\]\n\n因此，她每天在市场上的收入是$18。\n\nThe answer is 18.",
+      "pred": "18",
+      "gt": "18",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 1,
+      "output": "Sure, let's break this down step by step:\n\n1. We start with 2 blue fibers.\n2. Each of these blue fibers is then combined with half a white fiber.\n\nSo, for each blue fiber:\n- We have 1 blue fiber.\n- We add half (0.5) of a white fiber.\n\nTherefore, for 2 blue fibers:\n- We have \\(2 \\times 1 = 2\\) blue fibers.\n- And \\(2 \\times 0.5 = 1\\) white fiber.\n\nAdding these together gives us the total number of fibers:\n- Total fibers = Blue fibers + White fibers\n- Total fibers = 2 + 1 = 3\n\nThe answer is 3.",
+      "pred": "3",
+      "gt": "3",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 2,
+      "output": "Sure, let's break down the problem step by step.\n\n1. **Initial Cost of the House**: Josh buys a house for $80,000.\n2. **Cost of Renovation**: He spends an additional $50,000 on renovations.\n3. **Total Investment**: Therefore, his total investment is $80,000 + $50,000 = $130,000.\n4. **Final Value of the House**: The problem states that after renovation, the value of the house increased by 150%. This means the new value of the house is 250% of its original price (100% + 150% = 250%).\n\nTo find the final value of the house:\n\\[ \\text{Final Value} = 250\\% \\times \\$80,000 = 2.5 \\times \\$80,000 = \\$200,000 \\]\n\n5. **Profit Calculation**: To find out how much profit Josh made, we subtract the total investment from the final value of the house.\n\\[ \\text{Profit} = \\$200,000 - \\$130,000 = \\$70,000 \\]\n\nThe answer is 70000.",
+      "pred": "70000",
+      "gt": "70000",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 3,
+      "output": "Sure, let's break this down step by step:\n\n1. James decides to run 3 sprints each day.\n2. Each sprint is 60 meters long.\n3. He does this for 7 days in a week.\n\nNow, let's calculate the total distance he runs in one week:\n\n- Distance covered in one sprint = 60 meters\n- Distance covered in one day = 3 sprints/day * 60 meters/sprint = 180 meters/day\n- Distance covered in one week = 7 days/week * 180 meters/day = 1260 meters/week\n\nThe answer is 1260.",
+      "pred": "1260",
+      "gt": "540",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 4,
+      "output": "让我们逐步分析这个问题：\n\n1. **计算每只母鸡每天需要的饲料量**：\n   - 每天喂三次，每次喂3杯混合饲料。\n   - 因此，每只母鸡每天需要的饲料总量是 \\(3 \\times 3 = 9\\) 杯。\n\n2. **计算所有母鸡一天总共需要的饲料量**：\n   - 有20只母鸡。\n   - 所以，20只母鸡一天总共需要的饲料量是 \\(20 \\times 9 = 180\\) 杯。\n\n3. **计算已经提供的饲料量**：\n   - 早上喂了15杯。\n   - 中午喂了25杯。\n   - 因此，已经提供的饲料总量是 \\(15 + 25 = 40\\) 杯。\n\n4. **计算剩余需要提供的饲料量**：\n   - 总共需要180杯，已经提供了40杯。\n   - 所以，还需要提供的饲料量是 \\(180 - 40 = 140\\) 杯。\n\n因此，答案是：140。",
+      "pred": "140",
+      "gt": "20",
+      "correct": false,
+      "format_ok": false
+    },
+    {
+      "id": 5,
+      "output": "Sure, let's break down the problem step by step.\n\n1. **Identify the cost pattern**: \n   - The first glass costs $5.\n   - Every second glass costs 60% of the original price, which means it costs \\(5 \\times 0.6 = \\$3\\).\n\n2. **Determine the sequence of purchases**:\n   - For every two glasses, the cost is $5 (first glass) + $3 (second glass) = $8.\n\n3. **Calculate the total number of pairs and remaining glasses**:\n   - Kailar wants to buy 16 glasses.\n   - Since he buys them in pairs, we can divide 16 by 2 to find out how many complete pairs there are: \\(16 \\div 2 = 8\\) pairs.\n\n4. **Calculate the total cost for these pairs**:\n   - Each pair costs $8, so for 8 pairs, the total cost is \\(8 \\times 8 = \\$64\\).\n\n5. **Check if there are any remaining glasses**:\n   - Since 16 is exactly divisible by 2, there are no remaining glasses to consider.\n\nTherefore, the total amount Kailar needs to pay is $64.\n\nThe answer is 64.",
+      "pred": "64",
+      "gt": "64",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 6,
+      "output": "好的，让我们一步步来解决这个问题。\n\n1. **确定塞塔莱的猪的数量**：\n   - 根据题目，塞塔莱的猪的数量是西雅图的四倍。\n   - 西雅图有20头猪。\n   - 因此，塞塔莱有的猪的数量为 \\(20 \\times 4 = 80\\) 头。\n\n2. **确定托鲁兹的猪的数量**：\n   - 根据题目，托鲁兹的猪的数量是查尔斯顿的两倍。\n   - 查尔斯顿的猪的数量未知，但我们可以设为X。\n   - 托鲁兹的猪的数量为 \\(2X\\)。\n\n3. **查尔斯顿的猪的数量**：\n   - 查尔斯顿的猪的数量是西雅图的两倍。\n   - 西雅图有20头猪。\n   - 因此，查尔斯顿的猪的数量为 \\(20 \\times 2 = 40\\) 头。\n\n4. **计算托鲁兹的猪的数量**：\n   - 查尔斯顿有40头猪。\n   - 托鲁兹的猪的数量是查尔斯顿的两倍。\n   - 因此，托鲁兹的猪的数量为 \\(40 \\times 2 = 80\\) 头。\n\n5. **计算三者总和**：\n   - 塞塔莱：80头\n   - 查尔斯顿：40头\n   - 托鲁兹：80头\n\n因此，塞塔莱、查尔斯顿和托鲁兹三者共有的猪的数量为 \\(80 + 40 + 80 = 200\\) 头。\n\nThe answer is 200.",
+      "pred": "200",
+      "gt": "260",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 7,
+      "output": "To solve this problem, let's break it down into steps:\n\n1. **Calculate the total size of the file**: The file size is 200 GB.\n\n2. **Determine the download speed**: The download speed is 2 GB per minute.\n\n3. **Calculate the time to download 40% of the file**: \n   - 40% of 200 GB = \\(0.4 \\times 200\\) GB = 80 GB.\n   - Time to download 80 GB at 2 GB per minute = \\(80 \\div 2\\) minutes = 40 minutes.\n\n4. **Account for the Windows restart**: This takes 20 minutes.\n\n5. **Calculate the remaining 60% of the file**:\n   - 60% of 200 GB = \\(0.6 \\times 200\\) GB = 120 GB.\n   - Time to download 120 GB at 2 GB per minute = \\(120 \\div 2\\) minutes = 60 minutes.\n\n6. **Add up all the times**:\n   - Time to download 40% = 40 minutes.\n   - Time for Windows restart = 20 minutes.\n   - Time to download remaining 60% = 60 minutes.\n   - Total time = \\(40 + 20 + 60\\) minutes = 120 minutes.\n\nThe answer is 120.",
+      "pred": "120",
+      "gt": "160",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 8,
+      "output": "让我们一步步分析这个问题。\n\n首先，计算去程的情况：\n- 去程时速为60英里/小时，持续时间为3小时。\n- 因此，去程的总距离是 \\(60 \\times 3 = 180\\) 英里。\n\n接下来，考虑回程的情况：\n- 回程开始时，约翰在交通中浪费了2小时，这意味着他实际行驶的时间是 \\(4 - 2 = 2\\) 小时。\n- 在接下来的半小时里，他以每小时30英里的速度行驶，因此行驶的距离是 \\(30 \\times 0.5 = 15\\) 英里。\n- 最后，在剩下的4小时里，他以每小时80英里的速度行驶，因此行驶的距离是 \\(80 \\times 4 = 320\\) 英里。\n\n现在，我们计算回程的总距离：\n- 回程的总距离是 \\(15 + 320 = 335\\) 英里。\n\n最后，我们需要计算约翰离家有多远。由于去程和回程的距离相同（都是180英里），我们可以得出结论，约翰离家的距离等于回程剩余的距离减去去程的距离。\n\n- 回程剩余的距离是335英里。\n- 去程的距离是180英里。\n\n因此，约翰离家的距离是 \\(335 - 180 = 155\\) 英里。\n\nThe answer is 155.",
+      "pred": "155",
+      "gt": "45",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 9,
+      "output": "让我们逐步分析：\n\n1. **正常工作时间的工资计算**：\n   - 每周前40小时，艾丽莎的时薪是$10。\n   - 因此，前40小时的工资为：\\(40 \\text{小时} \\times \\$10/\\text{小时} = \\$400\\)。\n\n2. **加班时间的工资计算**：\n   - 艾丽莎加班了5小时（总共工作了45小时）。\n   - 加班工资是正常工资的1.2倍，即 \\(\\$10 \\times 1.2 = \\$12/\\text{小时}\\)。\n   - 因此，加班5小时的工资为：\\(5 \\text{小时} \\times \\$12/\\text{小时} = \\$60\\)。\n\n3. **总工资计算**：\n   - 正常工资加上加班工资：\\( \\$400 + \\$60 = \\$460\\)。\n\n因此，艾丽莎这个星期的总收入是$460。\n\nThe answer is 460.",
+      "pred": "460",
+      "gt": "460",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 10,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n1. **第一月下载量**：题目中提到第一个月有60次下载。\n   \n2. **第二月下载量**：第二个月的下载量是第一月的三倍。因此，第二个月的下载量为 \\(60 \\times 3 = 180\\) 次。\n\n3. **第三月下载量**：第三个月的下载量比第二个月减少了30%，即第三个月的下载量为第二个月下载量的70%。因此，第三个月的下载量为 \\(180 \\times 0.7 = 126\\) 次。\n\n4. **总下载量**：将三个月的下载量相加，得到总下载量为 \\(60 + 180 + 126 = 366\\) 次。\n\n所以，答案是：The answer is 366.",
+      "pred": "366",
+      "gt": "366",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 11,
+      "output": "好的，我们来一步步计算一下：\n\n1. **计算20个甜甜圈的费用：**\n   - 价格是每打$68。\n   - 因为买了3打，所以总共是 \\(3 \\times 68 = 204\\) 美元。\n\n2. **计算2打迷你蛋糕的费用：**\n   - 价格是每打$80。\n   - 因为买了2打，所以总共是 \\(2 \\times 80 = 160\\) 美元。\n\n3. **计算6打迷你芝士蛋糕的费用：**\n   - 价格是每打$55。\n   - 因为买了6打，所以总共是 \\(6 \\times 55 = 330\\) 美元。\n\n现在，我们将所有这些加起来得到总费用：\n\\[ 204 + 160 + 330 = 694 \\]\n\n因此，总的费用是694美元。\n\nThe answer is 694.",
+      "pred": "694",
+      "gt": "694",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 12,
+      "output": "To determine how many years it will take for Carlos to break even on the cost of planting and maintaining the lemon tree, we need to calculate both the initial cost and the annual profit from selling the lemons.\n\n### Step 1: Initial Cost\nThe initial cost of planting the lemon tree is $90.\n\n### Step 2: Annual Profit Calculation\nEach year, the lemon tree produces 7 lemons. Each lemon can be sold for $1.5. Therefore, the annual revenue from selling the lemons is:\n\\[ 7 \\text{ lemons/year} \\times \\$1.5/\\text{lemon} = \\$10.5/\\text{year} \\]\n\nAdditionally, there is an annual cost of $3 for maintaining the tree. So, the net annual profit is:\n\\[ \\$10.5/\\text{year} - \\$3/\\text{year} = \\$7.5/\\text{year} \\]\n\n### Step 3: Break-Even Analysis\nTo find out how many years it takes to recover the initial $90 cost, we divide the initial cost by the annual net profit:\n\\[ \\frac{\\$90}{\\$7.5/\\text{year}} = 12 \\text{ years} \\]\n\nTherefore, it will take Carlos 12 years to break even on the cost of planting and maintaining the lemon tree.\n\nThe answer is 12.",
+      "pred": "12",
+      "gt": "13",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 13,
+      "output": "To solve this problem, let's break it down step by step:\n\n1. **Determine the total number of vacuum cleaners sold to green houses**: Since Melani sold one-third of her vacuum cleaners to green houses, and she ended up with 5 vacuum cleaners left, we can calculate the initial number of vacuum cleaners as follows:\n   - Let \\( x \\) be the initial number of vacuum cleaners.\n   - One-third of \\( x \\) was sold to green houses, so \\( \\frac{x}{3} \\) vacuum cleaners were sold to green houses.\n\n2. **Calculate the remaining vacuum cleaners after selling to green houses**:\n   - After selling \\( \\frac{x}{3} \\) vacuum cleaners to green houses, Melani had \\( x - \\frac{x}{3} = \\frac{2x}{3} \\) vacuum cleaners left.\n\n3. **Determine the number of vacuum cleaners sold to red and orange houses**:\n   - Melani sold 2 vacuum cleaners to red houses and half of the remaining vacuum cleaners (which is \\( \\frac{2x}{3} \\)) to orange houses.\n   - Therefore, the number of vacuum cleaners sold to orange houses is \\( \\frac{1}{2} \\times \\frac{2x}{3} = \\frac{x}{3} \\).\n\n4. **Calculate the total number of vacuum cleaners sold**:\n   - Total vacuum cleaners sold = vacuum cleaners sold to green houses + vacuum cleaners sold to red houses + vacuum cleaners sold to orange houses.\n   - Total vacuum cleaners sold = \\( \\frac{x}{3} + 2 + \\frac{x}{3} = \\frac{2x}{3} + 2 \\).\n\n5. **Determine the initial number of vacuum cleaners**:\n   - We know that after all these sales, Melani has 5 vacuum cleaners left.\n   - So, the equation becomes: \\( \\frac{2x}{3} = 5 \\).\n   - Solving for \\( x \\), we get \\( x = \\frac{5 \\times 3}{2} = 7.5 \\). Since the number of vacuum cleaners must be a whole number, we need to recheck the interpretation or calculation. However, based on the problem statement and logical steps, the correct interpretation should lead us to the nearest whole number fitting the context.\n\nGiven the problem constraints and logical steps, the initial number of vacuum cleaners Melani had is 9.\n\nThe answer is 9.",
+      "pred": "9",
+      "gt": "18",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 14,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n1. **确定20%的学生选择了踢踏舞**：\n   - 总学生数为20。\n   - 20%的学生选择踢踏舞，即 \\(20 \\times 20\\% = 4\\) 名学生。\n\n2. **确定剩余学生的百分比**：\n   - 剩下的学生是 \\(100\\% - 20\\% = 80\\%\\).\n\n3. **计算选择爵士舞的学生比例**：\n   - 在剩下的80%中，有25%的学生选择了爵士舞。\n   - 因此，选择爵士舞的学生比例是 \\(80\\% \\times 25\\% = 20\\%\\).\n   - 选择爵士舞的学生人数为 \\(20 \\times 20\\% = 4\\) 名学生。\n\n4. **计算选择嘻哈舞的学生比例**：\n   - 剩下的学生比例是 \\(80\\% - 25\\% = 55\\%\\).\n   - 因此，选择嘻哈舞的学生比例是55%。\n\n综上所述，选择嘻哈舞的学生占总学生的55%。\n\nThe answer is 55.",
+      "pred": "55",
+      "gt": "60",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 15,
+      "output": "让我们逐步分析这个问题。\n\n首先，我们计算两种商品在一个月内可能增加的价值。\n\n对于价值为$5,000的珠宝：\n增值百分比 = 2.5%\n增值金额 = $5,000 * 2.5% = $5,000 * 0.025 = $125\n\n对于价值为$8,000的电子设备：\n增值百分比 = 1.2%\n增值金额 = $8,000 * 1.2% = $8,000 * 0.012 = $96\n\n接下来，比较两种情况下的增值金额：\n\n- 珠宝增值：$125\n- 电子设备增值：$96\n\n显然，珠宝的增值金额更高。\n\n因此，如果交易商选择珠宝，那么一个月后可以获得更多的增值收益。\n\nThe answer is $125.",
+      "pred": "125",
+      "gt": "125",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 16,
+      "output": "Sure, let's break this down step by step.\n\n1. **First Day Travel**: Both trains start from San Rafael and travel in the west direction for 80 miles each.\n   - Total distance traveled on the first day by both trains combined = 80 miles (Train 1) + 80 miles (Train 2) = 160 miles.\n\n2. **Second Day Travel**: Both trains then travel in the north direction for 150 miles each.\n   - Total distance traveled on the second day by both trains combined = 150 miles (Train 1) + 150 miles (Train 2) = 300 miles.\n\n3. **Total Distance Traveled**: To find the total distance traveled by both trains over the two days, we add the distances from both days together.\n   - Total distance = First day's distance + Second day's distance = 160 miles + 300 miles = 460 miles.\n\nThe answer is 460.",
+      "pred": "460",
+      "gt": "230",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 17,
+      "output": "让我们逐步分析这个问题。\n\n首先，计算作为教师的收入：\n- 每小时收入为$20。\n- 每周工作35小时。\n- 每年工作50周。\n\n所以，每周收入 = $20 × 35小时 = $700。\n每年收入（作为教师）= $700 × 50周 = $35,000。\n\n接下来，计算作为教练的收入：\n- 每小时收入为$30。\n- 每周工作15小时。\n- 每年工作50周。\n\n所以，每周收入 = $30 × 15小时 = $450。\n每年收入（作为教练）= $450 × 50周 = $22,500。\n\n最后，将两者的收入相加得到总年收入：\n总年收入 = $35,000 + $22,500 = $57,500。\n\n因此，该人的年收入是$57,500。\n\nThe answer is 57500.",
+      "pred": "57500",
+      "gt": "57500",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 18,
+      "output": "Sure, let's break this down step by step:\n\n1. **Daily Egg Consumption**: Clare eats 3 eggs every morning for her omelet.\n2. **Weekly Egg Consumption**: Since there are 7 days in a week, we can calculate the number of eggs she eats in one week by multiplying the daily consumption by 7.\n\n\\[ \\text{Weekly Egg Consumption} = 3 \\text{ eggs/day} \\times 7 \\text{ days/week} = 21 \\text{ eggs/week} \\]\n\n3. **Total Egg Consumption Over 4 Weeks**: To find out how many eggs Clare eats over 4 weeks, we multiply the weekly consumption by 4.\n\n\\[ \\text{Total Egg Consumption} = 21 \\text{ eggs/week} \\times 4 \\text{ weeks} = 84 \\text{ eggs} \\]\n\nSince the question asks for the number of dozens of eggs consumed, we need to convert the total number of eggs into dozens. There are 12 eggs in a dozen.\n\n\\[ \\text{Total Dozen Eggs} = \\frac{84 \\text{ eggs}}{12 \\text{ eggs/dozen}} = 7 \\text{ dozen} \\]\n\nTherefore, the answer is 7 dozen. The answer is 7.",
+      "pred": "7",
+      "gt": "7",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 19,
+      "output": "让我们逐步分析这个问题：\n\n1. **计算已走的距离和时间**：\n   - 前4英里用了1小时。\n   - 接下来的2英里用了1小时。\n   - 因此，总共已经走了6英里。\n\n2. **确定剩余的距离**：\n   - 总距离是12英里。\n   - 已经走了6英里。\n   - 所以，剩余的距离是 \\(12 - 6 = 6\\) 英里。\n\n3. **计算剩余的时间**：\n   - 总共需要完成12英里的行程。\n   - 已经用去了2小时（因为前6英里用了2小时）。\n   - 因此，剩余的时间是 \\( \\frac{12}{4} - 2 = 3 - 2 = 1\\) 小时。\n\n4. **计算剩余的距离需要的平均速度**：\n   - 剩余的距离是6英里。\n   - 剩余的时间是1小时。\n   - 要达到4英里/小时的平均速度，剩余的6英里需要在1小时内完成。\n\n因此，为了达到目标，剩余的6英里需要在1小时内完成，所以需要的速度是 \\( \\frac{6 \\text{ miles}}{1 \\text{ hour}} = 6 \\text{ miles per hour}\\)。\n\nThe answer is 6.",
+      "pred": "6",
+      "gt": "6",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 20,
+      "output": "好的，让我们一步步来分析这个问题。\n\n首先，我们计算原始的10升混合液体中的水含量：\n- 由于混合液是两三分之水，那么水的比例是 \\(\\frac{2}{5}\\)。\n- 因此，水的总量是 \\(10 \\times \\frac{2}{5} = 4\\) 升。\n\n接下来，我们考虑加入的15升混合液体中的水含量：\n- 这些液体是三五分之水，即水的比例是 \\(\\frac{3}{8}\\)。\n- 因此，水的总量是 \\(15 \\times \\frac{3}{8} = \\frac{45}{8} = 5.625\\) 升。\n\n现在，我们把两种液体混合前的水含量加起来：\n- 总水量是 \\(4 + 5.625 = 9.625\\) 升。\n\n然后，你从混合液中倒出了1升混合液。因为混合液的成分保持不变，所以这1升液体也含有相同比例的水：\n- 倒出的液体中有 \\(\\frac{2}{5}\\) 的比例是水，因此倒出的液体中有 \\(1 \\times \\frac{2}{5} = 0.4\\) 升水。\n\n最后，我们计算剩余液体中的水含量：\n- 剩余的总水量是 \\(9.625 - 0.4 = 9.225\\) 升。\n\n所以，最终答案是：剩余的24升混合液体中有9.225升水。但题目要求的是最终混合后的总体积为24升时的水量，因此我们需要重新审视题目的描述和计算过程。\n\n实际上，题目描述的是混合后的总体积为24升，而不是直接给出剩余液体的体积。因此，我们只需关注混合后的水的比例：\n- 混合后的液体总量是24升，其中水的比例是 \\(\\frac{2}{5} + \\frac{3}{8} = \\frac{16}{40} + \\frac{15}{40} = \\frac{31}{40}\\)。\n- 因此，水的总量是 \\(24 \\times \\frac{31}{40} = 18.6\\) 升。\n\n所以，最终答案是：剩余的24升",
+      "pred": "24",
+      "gt": "15",
+      "correct": false,
+      "format_ok": false
+    },
+    {
+      "id": 21,
+      "output": "让我们逐步分析这个问题：\n\n1. **确定当前时间点**：\n   - 据题意，萨曼莎现在31岁。\n\n2. **计算雷蒙德的年龄**：\n   - 雷蒙德比萨曼莎年轻6岁。\n   - 因此，雷蒙德现在的年龄是 \\(31 - 6 = 25\\) 岁。\n\n3. **确定雷蒙德儿子的年龄**：\n   - 雷蒙德在他23岁时生下了他的第一个孩子。\n   - 所以，雷蒙德的儿子现在是 \\(25 - 23 = 2\\) 岁。\n\n4. **计算雷蒙德儿子出生的时间**：\n   - 雷蒙德的儿子现在2岁，这意味着他是在 \\(25 - 2 = 23\\) 岁时出生的。\n   - 也就是说，雷蒙德的儿子是在雷蒙德23岁的时候出生的。\n\n综上所述，雷蒙德的儿子的出生时间是在雷蒙德23岁的时候，即雷蒙德的儿子的出生时间比现在早了 \\(25 - 23 = 2\\) 年。\n\n因此，雷蒙德的儿子的出生时间比现在早了2年。\n\nThe answer is 2.",
+      "pred": "2",
+      "gt": "14",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 22,
+      "output": "Sure, let's break down the problem step by step:\n\n1. **First 3 Customers**: Each of these customers buys 1 DVD.\n   - So, for 3 customers, the total DVDs sold = \\(3 \\times 1 = 3\\).\n\n2. **Next 2 Customers**: Each of these customers buys 2 DVDs.\n   - So, for 2 customers, the total DVDs sold = \\(2 \\times 2 = 4\\).\n\n3. **Last 3 Customers**: None of these customers buy any DVDs.\n   - So, for 3 customers, the total DVDs sold = \\(3 \\times 0 = 0\\).\n\nNow, we add up all the DVDs sold:\n- DVDs sold to first 3 customers = 3\n- DVDs sold to next 2 customers = 4\n- DVDs sold to last 3 customers = 0\n\nTotal DVDs sold on Monday = \\(3 + 4 + 0 = 7\\).\n\nThe answer is 7.",
+      "pred": "7",
+      "gt": "7",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 23,
+      "output": "Sure, let's break this down step by step.\n\n1. **Determine the time period:** The time period from 1:00 PM to 5:00 PM is 4 hours.\n2. **Calculate the rate of change:** The momemtum decreases at a rate of 2 centimeters per hour.\n3. **Calculate the total decrease in size:** To find out how much the momemtum will decrease over 4 hours, we multiply the rate of change by the number of hours:\n   \\[\n   2 \\text{ cm/hour} \\times 4 \\text{ hours} = 8 \\text{ cm}\n   \\]\n\nSo, after 4 hours, the momemtum will have decreased by 8 centimeters.\n\nThe answer is 8.",
+      "pred": "8",
+      "gt": "8",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 24,
+      "output": "好的，我们来一步步分析这个问题。\n\n首先，我们知道这本书在打折后的价格是$19.50，并且这个价格是在打了25%的折扣之后得到的。这意味着顾客实际上支付了原价的75%（因为100% - 25% = 75%）。\n\n设这本书的原价为X美元。根据题目描述，我们可以得出以下等式：\n\n\\[ 0.75X = 19.50 \\]\n\n为了找到原价X，我们需要将两边都除以0.75：\n\n\\[ X = \\frac{19.50}{0.75} \\]\n\n计算这个除法：\n\n\\[ X = 26 \\]\n\n所以，这本书的原价是$26。\n\nThe answer is 26.",
+      "pred": "26",
+      "gt": "26",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 25,
+      "output": "好的，让我们一步步来解决这个问题。\n\n首先，我们计算已知商品的总价：\n- 鸡米的价格是 $12。\n- 5包牛奶的价格是 \\(5 \\times 3 = 15\\) 美元。\n- 4个苹果的价格是 \\(4 \\times 1.50 = 6\\) 美元。\n\n这些商品的总价格是 \\(12 + 15 + 6 = 33\\) 美元。\n\n接下来，我们知道玛丽总共支付了 $50。因此，用于披萨盒子的钱是 \\(50 - 33 = 17\\) 美元。\n\n既然每个披萨盒子的价格是 $8.50，那么玛丽订购的披萨盒子数量是 \\(17 \\div 8.50 = 2\\)。\n\n所以，玛丽订购了2个披萨盒子。\n\nThe answer is 2。",
+      "pred": "2",
+      "gt": "2",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 26,
+      "output": "好的，让我们一步步来计算：\n\n1. **计算短裤的总费用**：\n   - 每对短裤的价格是 $16.50。\n   - 拥有3对短裤。\n   - 因此，短裤的总费用是 \\(3 \\times 16.50 = 49.50\\) 美元。\n\n2. **计算裤子的总费用**：\n   - 每对裤子的价格是 $22.50。\n   - 拥有3对裤子。\n   - 因此，裤子的总费用是 \\(3 \\times 22.50 = 67.50\\) 美元。\n\n3. **计算鞋子的总费用**：\n   - 每对鞋子的价格是 $42。\n   - 拥有3对鞋子。\n   - 因此，鞋子的总费用是 \\(3 \\times 42 = 126\\) 美元。\n\n4. **计算所有物品的总费用**：\n   - 将上述所有费用相加：\\(49.50 + 67.50 + 126 = 243\\) 美元。\n\n因此，混合卡先生在这些衣物上总共花费了243美元。\n\nThe answer is 243.",
+      "pred": "243",
+      "gt": "243",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 27,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们需要知道每天她吃多少份冰淇淋。\n- 每个卡特林（carton）有15份冰淇淋。\n- 她每天吃一份冰淇淋，即每天消耗 \\(\\frac{1}{15}\\) 个卡特林。\n\n接下来，计算60天内她需要多少卡特林。\n- 60天内她会吃 \\(60 \\times \\frac{1}{15} = 4\\) 个卡特林。\n\n最后，我们计算这60天内她在冰淇淋上的总花费。\n- 每个卡特林的价格是$4.00。\n- 因此，4个卡特林的总价格是 \\(4 \\times 4.00 = 16.00\\) 美元。\n\n所以，答案是：The answer is 16.00。",
+      "pred": "16.00",
+      "gt": "16",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 28,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n1. 首先，我们知道亨利的总行程是60英里。\n2. 他第一次停下了20英里后。\n3. 他的第二次停留是在距离终点还有15英里的地方，也就是说，他在离终点还有15英里的时候停了下来，这意味着他已经骑行了 \\(60 - 15 = 45\\) 英里。\n4. 第一次停留之后，他还剩下 \\(45 - 20 = 25\\) 英里没有骑行。\n\n因此，在两次停留之间，亨利骑行的距离是 \\(45 - 20 = 25\\) 英里。\n\nThe answer is 25.",
+      "pred": "25",
+      "gt": "25",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 29,
+      "output": "让我们逐步分析这个问题：\n\n1. 两双高跟鞋的总价格是 $33 + ($33 * 2) = $33 + $66 = $99。\n2. 高跟鞋比靴子便宜5美元，所以靴子的价格是 $99 + $5 = $104。\n\n因此，靴子的价格是 $104。\n\nThe answer is 104.",
+      "pred": "104",
+      "gt": "104",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 30,
+      "output": "好的，我们先来逐步分析这个问题。\n\n首先，我们知道：\n- 他们的年龄比例是 7:11。\n- 他们现在的总年龄是 162 岁。\n\n我们可以设他们的年龄分别为 \\(7x\\) 和 \\(11x\\)，其中 \\(x\\) 是一个共同的倍数。\n\n根据题目给出的信息，我们可以建立方程：\n\\[7x + 11x = 162\\]\n\n解这个方程：\n\\[18x = 162\\]\n\\[x = \\frac{162}{18}\\]\n\\[x = 9\\]\n\n所以，现在他们的年龄分别是：\n- 7x = 7 * 9 = 63 岁\n- 11x = 11 * 9 = 99 岁\n\n接下来，我们要计算 10 年后艾伦的年龄。艾伦现在的年龄是 99 岁，那么 10 年后他的年龄将是：\n\\[99 + 10 = 109\\]\n\n因此，答案是：109。",
+      "pred": "109",
+      "gt": "109",
+      "correct": true,
+      "format_ok": false
+    },
+    {
+      "id": 31,
+      "output": "让我们一步步来分析这个问题。\n\n首先，我们设第一个朋友给出的数字为 \\(x\\)，即 \\(x = 80\\)。\n\n第二个朋友说的数量比第一个朋友多20个，所以第二个朋友给出的数量是 \\(x + 20\\)。将 \\(x = 80\\) 代入，得到 \\(80 + 20 = 100\\)。\n\n第三个朋友说的数量比第一个朋友多25%，即 \\(x + 0.25x = 1.25x\\)。将 \\(x = 80\\) 代入，得到 \\(1.25 \\times 80 = 100\\)。\n\n现在我们有三个不同的估计值：80、100和100。\n\n为了找到这三个估计值的平均值，我们需要将它们相加然后除以3。\n\\[ \\text{平均值} = \\frac{80 + 100 + 100}{3} = \\frac{280}{3} \\approx 93.33 \\]\n\n因此，这三个朋友给出的平均估计数量大约是93.33。\n\nThe answer is 93.33.",
+      "pred": "93.33",
+      "gt": "80",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 32,
+      "output": "To solve this problem, let's break it down into steps:\n\n1. **Determine the daily time spent on each dog:** John spends 0.5 hours per day on each dog.\n2. **Calculate the total number of dogs:** John has 10 dogs to take care of.\n3. **Calculate the weekly time spent on all dogs:** Since there are 7 days in a week, we need to find out how many hours he spends in a week.\n\nFirst, calculate the daily total for all dogs:\n\\[ \\text{Daily time for all dogs} = 10 \\text{ dogs} \\times 0.5 \\text{ hours/dog} = 5 \\text{ hours/day} \\]\n\nNext, calculate the weekly total:\n\\[ \\text{Weekly time for all dogs} = 5 \\text{ hours/day} \\times 7 \\text{ days/week} = 35 \\text{ hours/week} \\]\n\nSo, John spends 35 hours per week taking care of the dogs.\n\nThe answer is 35.",
+      "pred": "35",
+      "gt": "35",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 33,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道：\n- 总共有110枚硬币。\n- 银币比金币多30枚。\n\n设金币的数量为x，则银币的数量就是x + 30。根据题目，我们可以得出以下等式：\n\n\\[ x + (x + 30) = 110 \\]\n\n接下来解这个方程：\n\n\\[ 2x + 30 = 110 \\]\n\\[ 2x = 110 - 30 \\]\n\\[ 2x = 80 \\]\n\\[ x = 40 \\]\n\n所以，金币的数量是40枚。\n\n因此，银币的数量是 \\(40 + 30 = 70\\) 枚。\n\n答案是：40。",
+      "pred": "40",
+      "gt": "70",
+      "correct": false,
+      "format_ok": false
+    },
+    {
+      "id": 34,
+      "output": "好的，我们一步步来分析这个问题。\n\n1. **首先，我们知道Remmond有40颗宝石。**\n   - Remmond = 40\n\n2. **根据题目，Aeron比Remmond多5颗宝石，但这些宝石是Remmond宝石数量的一半。**\n   - Aeron的宝石数量是Remmond的一半加上5颗。\n   - Remmond的一半就是 \\(40 \\div 2 = 20\\)。\n   - 因此，Aeron的宝石数量为 \\(20 + 5 = 25\\)。\n\n3. **接下来，Shyobhan比Aeron少2颗宝石。**\n   - Shyobhan的宝石数量是Aeron的数量减去2。\n   - Aeron有25颗宝石，所以Shyobhan的宝石数量为 \\(25 - 2 = 23\\)。\n\n因此，Shyobhan有23颗宝石。\n\nThe answer is 23.",
+      "pred": "23",
+      "gt": "23",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 35,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n1. **第一阶段**：在前20分钟里，迈克得了4分。\n   - 这个阶段的结果是明确的，不需要额外计算。\n\n2. **第二阶段**：在接下来的20分钟里，迈克比前20分钟多得25%的分数。\n   - 在第一阶段，迈克得了4分。因此，在第二阶段，他得到的分数将是4分的125%，即 \\(4 \\times 1.25 = 5\\) 分。\n\n3. **总得分**：将两个阶段的得分相加。\n   - 第一阶段得分 + 第二阶段得分 = 总得分\n   - \\(4 + 5 = 9\\)\n\n所以，迈克总共得了9分。\n\nThe answer is 9.",
+      "pred": "9",
+      "gt": "9",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 36,
+      "output": "Sure, let's break this down step by step:\n\n1. **Daily Yogurt Consumption**: Teri eats 2 yogurts per day.\n2. **Price of Yogurt**: Each yogurt costs $5.00.\n3. **Daily Cost**: To find the daily cost, we multiply the number of yogurts by the price per yogurt:\n   \\[\n   2 \\text{ yogurts/day} \\times \\$5.00/\\text{yogurt} = \\$10.00/\\text{day}\n   \\]\n4. **Monthly Cost**: To find the monthly cost over 30 days, we multiply the daily cost by the number of days:\n   \\[\n   \\$10.00/\\text{day} \\times 30 \\text{ days} = \\$300.00\n   \\]\n\nThe answer is <300>.",
+      "pred": "300",
+      "gt": "75",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 37,
+      "output": "让我们逐步分析这个问题：\n\n1. **计算总收入**：\n   - 约翰有13个乐高套装，每个售价$15。\n   - 因此，总收入 = 13 * $15 = $195。\n\n2. **计算总支出**：\n   - 他用这些钱买了8个视频游戏，每个价格为$20。\n   - 总支出 = 8 * $20 = $160。\n\n3. **计算剩余金额**：\n   - 剩余金额 = 总收入 - 总支出 = $195 - $160 = $35。\n   - 根据题目，他还剩下$5，这意味着他在购买视频游戏后还剩下$35 - $5 = $30。\n\n4. **分析剩余的乐高套装数量**：\n   - 题目没有提到约翰在买视频游戏后卖掉了任何乐高套装，所以我们可以假设他的乐高套装数量没有变化。\n\n因此，约翰现在仍然有原来的13个乐高套装。\n\nThe answer is 13.",
+      "pred": "13",
+      "gt": "2",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 38,
+      "output": "好的，我们来逐步分析这个问题。\n\n1. **总跑步距离**：约翰一周跑60英里。\n2. **跑步天数和时间分配**：\n   - 第一天，他跑了3小时。\n   - 其余两天，他每天跑的时间是第一天的一半，即每天跑1.5小时。\n3. **计算总跑步时间**：\n   - 第一天：3小时。\n   - 第二天和第三天各跑1.5小时，总共是3小时。\n   - 因此，一周总共跑的时间是 \\(3 + 1.5 + 1.5 = 6\\) 小时。\n4. **计算平均速度**：\n   - 总距离是60英里，总时间是6小时。\n   - 平均速度 = 总距离 / 总时间 = \\(60 \\text{ 英里} / 6 \\text{ 小时} = 10 \\text{ 英里/小时}\\)。\n\n因此，约翰的平均跑步速度是每小时10英里。 \n\nThe answer is 10.",
+      "pred": "10",
+      "gt": "10",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 39,
+      "output": "首先，我们根据题目信息确定各个速度：\n- 跑步的速度是步行速度的4倍。\n- 跳绳的速度是跑步速度的一半。\n\n如果她跳绳的速度是每小时3英里（mile/hour），那么跑步的速度是每小时\\(3 \\times 2 = 6\\)英里，而步行的速度是每小时\\(6 / 4 = 1.5\\)英里。\n\n接下来，我们计算她在6小时内能覆盖的距离。题目说她用三分之一的时间跑步，三分之二的时间步行。\n\n在6小时内，她跑步的时间是\\(6 \\times \\frac{1}{3} = 2\\)小时，步行的时间是\\(6 \\times \\frac{2}{3} = 4\\)小时。\n\n因此，在这6小时内，她可以跑\\(2 \\times 6 = 12\\)英里，走\\(4 \\times 1.5 = 6\\)英里。\n\n所以，总共可以覆盖\\(12 + 6 = 18\\)英里的距离。\n\nThe answer is 18.",
+      "pred": "18",
+      "gt": "18",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 40,
+      "output": "让我们一步步来分析这个问题：\n\n1. **确定Suzie的iPhone的年龄**：\n   - 根据题目，Suzie的iPhone是1年旧。\n\n2. **计算Ben的iPhone的年龄**：\n   - 题目说Ben的iPhone是Suzie的iPhone的两倍旧。\n   - 因此，Ben的iPhone是 \\(1 \\times 2 = 2\\) 年旧。\n\n3. **计算Brand的iPhone的年龄**：\n   - 题目说Brand的iPhone是Ben的iPhone的四倍旧。\n   - 因此，Brand的iPhone是 \\(2 \\times 4 = 8\\) 年旧。\n\n综上所述，Brand的iPhone是8年旧。\n\nThe answer is 8.",
+      "pred": "8",
+      "gt": "8",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 41,
+      "output": "让我们逐步分析这个问题：\n\n1. **初始情况**：\n   - 飞龙位于山顶，高度为1000英尺。\n   - 波莉可以投掷银币，距离可达400英尺，这个距离在飞龙的翅膀范围内。\n\n2. **获得宝石后的变化**：\n   - 当波莉获得宝石后，她可以投掷银币的距离变为原来的三倍。\n   - 因此，新的投掷距离 = 400英尺 * 3 = 1200英尺。\n\n3. **比较飞龙的翅膀范围和波莉的新投掷距离**：\n   - 飞龙的翅膀范围是1000英尺。\n   - 波莉获得宝石后的投掷距离是1200英尺。\n\n4. **结论**：\n   - 波莉获得宝石后，她的投掷距离超过了飞龙的翅膀范围（1200英尺 > 1000英尺）。\n   - 因此，即使飞龙在山顶，波莉也可以在飞龙的翅膀范围内投掷银币。\n\n所以，波莉可以在飞龙的翅膀范围内投掷银币，从而有可能击中飞龙。答案是：波莉可以在飞龙的翅膀范围内投掷银币，因此可以击中飞龙。\n\nThe answer is 1200.",
+      "pred": "1200",
+      "gt": "200",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 42,
+      "output": "让我们逐步分析这个问题：\n\n1. **初始状态**：Grandma Jones 做了5个派，每个派被切成了8块。所以总共有 \\(5 \\times 8 = 40\\) 块。\n\n2. **剩余状态**：最后剩下14块派。\n\n3. **计算被拿走的块数**：初始状态和剩余状态之间的差值就是被拿走的块数。\n   - 初始块数：40块\n   - 剩余块数：14块\n   - 被拿走的块数：\\(40 - 14 = 26\\)块\n\n因此，答案是：26块。",
+      "pred": "26",
+      "gt": "26",
+      "correct": true,
+      "format_ok": false
+    },
+    {
+      "id": 43,
+      "output": "让我们逐步分析这个问题：\n\n1. **确定每份的卡路里含量**：\n   - 每个服务含有250卡路里。\n   \n2. **计算整个袋子的卡路里总量**：\n   - 一个300克的袋子有5份，所以总卡路里是 \\(5 \\times 250 = 1250\\) 卡路里。\n\n3. **确定剩余可摄入的卡路里量**：\n   - 你的日卡路里目标是2000卡路里，已经摄入了1800卡路里。\n   - 剩余可以摄入的卡路里是 \\(2000 - 1800 = 200\\) 卡路里。\n\n4. **计算可以吃多少份**：\n   - 每份含有250卡路里，所以可以吃的份数是 \\( \\frac{200}{250} = 0.8\\) 份。\n\n5. **计算可以吃多少克**：\n   - 一个袋子有5份，总共300克。\n   - 每份的重量是 \\( \\frac{300}{5} = 60\\) 克。\n   - 因为可以吃0.8份，所以可以吃的克数是 \\(0.8 \\times 60 = 48\\) 克。\n\n因此，你可以在剩下的卡路里预算内吃48克的薯片。The answer is 48.",
+      "pred": "48",
+      "gt": "48",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 44,
+      "output": "让我们一步步来分析这个问题：\n\n1. **计算成本**：\n   - 每磅蜂蜜制成的烛棍的成本是$10.00。\n   - Charlie可以每磅蜂蜜制作10根烛棍。\n   - 因此，20根烛棍需要的蜂蜜重量是：\\( \\frac{20}{10} = 2 \\)磅。\n   - 总成本是 \\( 2 \\times $10.00 = $20.00 \\)。\n\n2. **计算收入**：\n   - 每根烛棍售价为$2.00。\n   - 如果Charlie卖出了20根烛棍，总收入是 \\( 20 \\times $2.00 = $40.00 \\)。\n\n3. **计算利润**：\n   - 收入减去成本即为利润。\n   - 利润 = 收入 - 成本 = $40.00 - $20.00 = $20.00。\n\n因此，Charlie的纯利润是$20.00。 \n\nThe answer is 20.",
+      "pred": "20",
+      "gt": "20",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 45,
+      "output": "Sure, let's break down the problem step by step.\n\n1. **Calculate the number of articles written each day:**\n   - **Sunday:** Meredith wrote 5 articles.\n   - **Monday:** She wrote 2/5 more than Sunday, so she wrote \\(5 + \\frac{2}{5} \\times 5 = 5 + 2 = 7\\) articles.\n   - **Tuesday:** She wrote twice as many as Monday, so she wrote \\(2 \\times 7 = 14\\) articles.\n\n2. **Calculate the time spent writing each day:**\n   - Each article takes her 4 hours to research and write.\n   - **Sunday:** \\(5 \\text{ articles} \\times 4 \\text{ hours/article} = 20 \\text{ hours}\\).\n   - **Monday:** \\(7 \\text{ articles} \\times 4 \\text{ hours/article} = 28 \\text{ hours}\\).\n   - **Tuesday:** \\(14 \\text{ articles} \\times 4 \\text{ hours/article} = 56 \\text{ hours}\\).\n\n3. **Sum up the total time spent writing over the three days:**\n   - Total time = \\(20 \\text{ hours} + 28 \\text{ hours} + 56 \\text{ hours} = 104 \\text{ hours}\\).\n\nThe answer is 104.",
+      "pred": "104",
+      "gt": "104",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 46,
+      "output": "让我们逐步分析这个问题：\n\n1. **初始数量**：Candice 在离开工作前有 80 张便签。\n2. **在途中的购买**：她在路上买了一包便签。\n3. **工作中的使用**：她在每杯咖啡上贴了 220 张便签。\n4. **剩余的数量**：最后她剩下 23 张便签。\n\n现在，我们可以通过以下步骤来计算她买的那包便签中有多少张：\n\n- **使用的便签总数**：她用了 220 张便签。\n- **剩余的便签数**：她剩下 23 张便签。\n- **初始便签数减去剩余便签数**：\\(80 - 23 = 57\\) 张便签。\n- **因此，她买的那包便签中有**：57 张便签。\n\n所以，Candice 买的那包便签中有 57 张便签。 \n\nThe answer is 57.",
+      "pred": "57",
+      "gt": "163",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 47,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n1. **确定尼莉（朱莉）的围巾价格**：\n   - 尼莉的围巾价格是每件40美元。\n   - 她买了两件，所以尼莉的围巾总价是 \\(40 \\times 2 = 80\\) 美元。\n\n2. **计算红色围巾的价格**：\n   - 红色围巾的价格比尼莉的围巾贵50%，这意味着红色围巾的价格是尼莉围巾价格的150%。\n   - 因此，红色围巾的价格为 \\(80 \\times 1.5 = 120\\) 美元。\n\n3. **计算约翰购买所有围巾的总花费**：\n   - 约翰买了两件尼莉的围巾和两件红色围巾。\n   - 所以，约翰总共花费了 \\(80 + 120 = 200\\) 美元。\n\n综上所述，约翰在围巾上总共花费了200美元。\n\nThe answer is 200.",
+      "pred": "200",
+      "gt": "800",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 48,
+      "output": "好的，让我们一步步来解决这个问题。\n\n首先，我们需要知道1英尺等于多少英寸。我们知道1英尺等于12英寸。\n\n接下来，我们知道Tracy使用了一根4英尺长的绳子，并且这根绳子被切割成了每段6英寸的长度。\n\n现在我们计算总共有多少段：\n\\[ \\text{总段数} = \\frac{\\text{绳子的总长度（英寸）}}{\\text{每段的长度（英寸）}} \\]\n\n将已知数值代入公式：\n\\[ \\text{总段数} = \\frac{4 \\times 12}{6} \\]\n\\[ \\text{总段数} = \\frac{48}{6} \\]\n\\[ \\text{总段数} = 8 \\]\n\n所以，Tracy得到了8段6英寸长的绳子。\n\nThe answer is 8.",
+      "pred": "8",
+      "gt": "8",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 49,
+      "output": "好的，让我们一步步来解决这个问题。\n\n首先，我们需要计算出整个公寓楼有多少个单元。根据题目描述，每个楼层有8个单元，而公寓楼共有15层。因此，公寓楼的总单元数为：\n\\[ 15 \\text{ 层} \\times 8 \\text{ 单元/层} = 120 \\text{ 单元} \\]\n\n接下来，我们知道公寓楼的3/4已经被租出去了。这意味着剩下的1/4是空的。所以，空置单元的数量为：\n\\[ 120 \\text{ 单元} \\times \\frac{1}{4} = 30 \\text{ 单元} \\]\n\n因此，空置单元的总数是30个。\n\nThe answer is 30.",
+      "pred": "30",
+      "gt": "30",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 50,
+      "output": "To determine how much Lloyd earns per week from selling eggs, we need to follow these steps:\n\n1. Calculate the total number of eggs produced in one week.\n2. Determine the revenue from selling those eggs.\n\nStep 1: Calculate the total number of eggs produced in one week.\n- Murgis lay 252 eggs per day.\n- There are 7 days in a week.\n- Therefore, the total number of eggs produced in one week is \\(252 \\text{ eggs/day} \\times 7 \\text{ days/week} = 1764 \\text{ eggs/week}\\).\n\nStep 2: Determine the revenue from selling those eggs.\n- Eggs are sold at $2 per dozen.\n- One dozen equals 12 eggs.\n- Therefore, the number of dozens of eggs is \\(1764 \\text{ eggs/week} \\div 12 \\text{ eggs/dozen} = 147 \\text{ dozens/week}\\).\n- Revenue from selling these eggs is \\(147 \\text{ dozens/week} \\times \\$2/\\text{dozen} = \\$294/\\text{week}\\).\n\nThe answer is 294.",
+      "pred": "294",
+      "gt": "294",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 51,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n首先，我们需要确定汤姆去某个地方的距离。由于他以每小时10英里的速度行驶，并且在下午1点到4点之间行驶，我们可以计算出他行驶的时间是3个小时。\n\n接下来，我们计算汤姆去时行驶的距离：\n\\[ \\text{距离} = \\text{速度} \\times \\text{时间} = 10 \\, \\text{英里/小时} \\times 3 \\, \\text{小时} = 30 \\, \\text{英里} \\]\n\n然后，我们知道他返回的速度是每小时6英里。现在我们要计算他返回需要多长时间：\n\\[ \\text{时间} = \\frac{\\text{距离}}{\\text{速度}} = \\frac{30 \\, \\text{英里}}{6 \\, \\text{英里/小时}} = 5 \\, \\text{小时} \\]\n\n因此，汤姆返回需要5个小时。\n\nThe answer is 5.",
+      "pred": "5",
+      "gt": "5",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 52,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道每本漫画书的重量是1/4磅，而每根雪茄的重量是1/2磅。如果尤里亚拿出了30本漫画书，那么这些漫画书总共会减轻多少重量呢？\n\n每本漫画书的重量是1/4磅，所以30本漫画书的总重量是：\n\\[ 30 \\times \\frac{1}{4} = \\frac{30}{4} = 7.5 \\text{磅} \\]\n\n尤里亚需要减少的总重量是15磅，已经拿出了7.5磅的漫画书，还需要再减少：\n\\[ 15 - 7.5 = 7.5 \\text{磅} \\]\n\n接下来，我们需要计算还需要拿多少根雪茄才能达到剩余需要减少的重量。每根雪茄的重量是1/2磅，所以需要拿的雪茄数量为：\n\\[ \\frac{7.5}{\\frac{1}{2}} = 7.5 \\times 2 = 15 \\]\n\n因此，尤里亚需要再拿15根雪茄。\n\nThe answer is 15.",
+      "pred": "15",
+      "gt": "15",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 53,
+      "output": "让我们一步步来分析这个问题。\n\n首先，计算星期二的收入：\n- 星期二修理了6辆卡车轮胎，每辆收费$60，所以总收入为 \\(6 \\times 60 = 360\\) 美元。\n- 星期二还修理了4辆汽车轮胎，每辆收费$40，所以额外收入为 \\(4 \\times 40 = 160\\) 美元。\n- 因此，星期二总共的收入是 \\(360 + 160 = 520\\) 美元。\n\n接着，计算星期三的收入：\n- 星期三修理了12辆汽车轮胎，每辆收费$40，所以总收入为 \\(12 \\times 40 = 480\\) 美元。\n- 星期三没有修理任何卡车轮胎，因此没有额外收入。\n\n最后，比较这两天的收入：\n- 星期二的收入为$520。\n- 星期三的收入为$480。\n\n因此，星期二比星期三多赚了 \\(520 - 480 = 40\\) 美元。\n\nThe answer is 40.",
+      "pred": "40",
+      "gt": "40",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 54,
+      "output": "好的，让我们一步步来分析这个问题。\n\n首先，我们知道有两只母猫：Patchie 和 Trissy。\nPatchie 的小猫数量是杜佛火（Doutfire）领养的7只小猫数量的三倍。所以 Patchie 的小猫数量为 \\(7 \\times 3 = 21\\) 只。\nTrissy 的小猫数量为12只。\n\n接下来，我们计算总共的小猫数量：\n- 杜佛火领养的小猫数量为7只。\n- Patchie 的小猫数量为21只。\n- Trissy 的小猫数量为12只。\n\n将这些加起来得到总数：\n\\[7 + 21 + 12 = 40\\]\n\n因此，杜佛火家现在总共有40只小猫。\n\nThe answer is 40.",
+      "pred": "40",
+      "gt": "40",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 55,
+      "output": "Sure, let's break this down step by step:\n\n1. **Total Lollipops**: Gene starts with 30 lollipops.\n2. **Lollipops Eaten**: Gene eats 2 lollipops.\n   - Remaining lollipops = 30 - 2 = 28 lollipops.\n3. **Lollipops per Bag**: Each bag can hold 2 lollipops.\n4. **Number of Bags**: To find out how many bags Gene can fill, we divide the remaining lollipops by the number of lollipops each bag can hold.\n   - Number of bags = 28 ÷ 2 = 14.\n\nThe answer is 14.",
+      "pred": "14",
+      "gt": "14",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 56,
+      "output": "Sure, let's break this down step by step.\n\n1. **Cost of a movie ticket:** $7\n2. **Cost of popcorn:** $7\n3. **Total cost per visit:** $7 (ticket) + $7 (popcorn) = $14 per visit\n\nNow, we need to find out how many times Peter can go to the movies with his budget of $42.\n\n4. **Total budget:** $42\n5. **Number of visits:** Total budget ÷ Cost per visit = $42 ÷ $14 = 3\n\nSo, Peter can go to the movies 3 times in a week.\n\nThe answer is 3.",
+      "pred": "3",
+      "gt": "3",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 57,
+      "output": "让我们逐步分析这个问题：\n\n1. **确定总重量限制**：首先，我们知道这个桥的最大承重是5000磅。\n\n2. **计算空车的重量**：司机和空车的总重量是3755磅。\n\n3. **计算剩余可承载的重量**：从桥的最大承重中减去空车的重量。\n   \\(5000 - 3755 = 1245\\)磅\n\n4. **计算每个箱子的重量**：每个箱子的重量是15磅。\n\n5. **计算最多可以装载的箱子数量**：用剩余可承载的重量除以每个箱子的重量。\n   \\(1245 \\div 15 = 83\\)\n\n因此，最多可以装载83个箱子。\n\nThe answer is 83.",
+      "pred": "83",
+      "gt": "83",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 58,
+      "output": "让我们逐步分析这个问题：\n\n1. **原始订单金额**：$40.00\n\n2. **加上25%的配送费**：\n   - 配送费计算方式为：\\(40 \\times 0.25 = 10\\) 美元\n   - 因此，配送后的总金额为：\\(40 + 10 = 50\\) 美元\n\n3. **减去配送费用**：$3.00\n   - 这一步操作后，总金额变为：\\(50 - 3 = 47\\) 美元\n\n4. **加上小费**：$4.00\n   - 最终的总金额为：\\(47 + 4 = 51\\) 美元\n\n综上所述，最终答案是：The answer is 51.",
+      "pred": "51",
+      "gt": "57",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 59,
+      "output": "Sure, let's break this down step by step.\n\n1. **Understanding the problem**: We have a raspberry plant where each group of 20 raspberries forms 6 groups. Additionally, there are 67 individual raspberries scattered on the plant.\n\n2. **Calculating the total number of raspberries in the groups**:\n   - Each group contains 20 raspberries.\n   - There are 6 such groups.\n   - So, the total number of raspberries in these groups would be \\(20 \\times 6 = 120\\).\n\n3. **Adding the individual raspberries**:\n   - We also know that there are 67 individual raspberries scattered on the plant.\n   \n4. **Finding the total number of raspberries**:\n   - To find the total number of raspberries, we add the raspberries from the groups and the individual raspberries together.\n   - Total raspberries = Raspberries in groups + Individual raspberries\n   - Total raspberries = 120 + 67\n\n5. **Performing the addition**:\n   - \\(120 + 67 = 187\\)\n\nSo, the total number of raspberries is 187.\n\nThe answer is 187.",
+      "pred": "187",
+      "gt": "187",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 60,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道总共有25个柿子。\n\n接下来，根据题目信息，有1个柿子是坏的。所以，我们先从总数中减去这个坏柿子：\n\\[ 25 - 1 = 24 \\]\n\n然后，题目说有20%的柿子是生的（即未成熟）。因此，我们需要计算出25个柿子中有多少个是生的：\n\\[ 25 \\times 20\\% = 25 \\times 0.2 = 5 \\]\n\n这意味着有5个柿子是生的。\n\n接着，题目还告诉我们有2个柿子是酸的。所以，我们知道有2个酸柿子。\n\n最后，剩下的柿子都是好的。因此，我们可以从总数中减去坏的、生的和酸的柿子数量来得到好的柿子数量：\n\\[ 25 - (1 + 5 + 2) = 25 - 8 = 17 \\]\n\n所以，最终的答案是：17个柿子是好的。\n\nThe answer is 17.",
+      "pred": "17",
+      "gt": "17",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 61,
+      "output": "Sure, let's break it down step by step:\n\n1. **Cost of materials**: The first payment is for the materials used to make the brooch, which is $500.\n2. **Payment to Jowhari**: The second payment is made to Jowhari for her work in making the brooch, which is $800.\n3. **Insurance payment**: The third payment is for insurance, which is 10% of the total cost of materials and labor.\n\nFirst, we calculate the total cost of materials and labor:\n\\[ \\text{Total cost} = \\$500 + \\$800 = \\$1300 \\]\n\nNext, we calculate the insurance payment, which is 10% of the total cost:\n\\[ \\text{Insurance payment} = 10\\% \\times \\$1300 = 0.10 \\times \\$1300 = \\$130 \\]\n\nNow, we add up all the payments:\n\\[ \\text{Total payment} = \\$500 + \\$800 + \\$130 = \\$1430 \\]\n\nThe answer is 1430.",
+      "pred": "1430",
+      "gt": "1430",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 62,
+      "output": "Sure, let's break down the problem step by step.\n\n1. **Initial Period (First 20 years):**\n   - For the first 20 years, Marcy receives a fixed annual pension of $50,000 per year.\n\n2. **Subsequent Period (After 20 years):**\n   - After 20 years, she starts receiving an additional pension that is 5% of her final salary each year.\n   - Since her final salary was $50,000 per year for the first 20 years, her pension will increase by 5% each subsequent year starting from the 21st year.\n\n3. **Calculation for the 30th Year:**\n   - We need to calculate the pension for the 30th year specifically.\n   - For the 21st year onwards, the pension increases by 5% each year.\n   - So, for the 30th year, we need to apply this 5% increase for 9 years after the initial 20 years.\n\nThe formula to calculate the pension for the 30th year would be:\n\\[ \\text{Pension}_{30} = \\$50,000 \\times (1 + 0.05)^{9} \\]\n\nNow, let's calculate it:\n\n\\[ \\text{Pension}_{30} = \\$50,000 \\times (1.05)^{9} \\]\n\\[ \\text{Pension}_{30} = \\$50,000 \\times 1.551328215 \\]\n\\[ \\text{Pension}_{30} \\approx \\$77,566.41 \\]\n\nTherefore, the answer is: The answer is 77566.41.",
+      "pred": "77566.41",
+      "gt": "25000",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 63,
+      "output": "好的，让我们一步一步来计算：\n\n1. **第一半年的费用**：\n   - 每月费用为 $140。\n   - 第一半年有6个月。\n   - 因此，第一半年的总费用是 \\(140 \\times 6 = 840\\) 美元。\n\n2. **第二半年的费用**：\n   - 第二半年每月的费用比第一半年减少了10%，即 \\(140 \\times (1 - 0.10) = 140 \\times 0.90 = 126\\) 美元。\n   - 第二半年也有6个月。\n   - 因此，第二半年的总费用是 \\(126 \\times 6 = 756\\) 美元。\n\n3. **全年总费用**：\n   - 将两半年的费用相加：\\(840 + 756 = 1596\\) 美元。\n\n因此，全年通过订阅流媒体服务支付的总金额是1596美元。\n\nThe answer is 1596.",
+      "pred": "1596",
+      "gt": "1596",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 64,
+      "output": "让我们逐步分析这个问题：\n\n1. **确定已知信息**：\n   - 前一次加满油后，Sophia行驶了100英里。\n   - 再次加满油需要4加仑汽油。\n   - Sophia的汽车油箱容量为12加仑。\n\n2. **计算每加仑汽油可以行驶的距离**：\n   - 在前一次加满油后，Sophia使用了12 - 4 = 8加仑汽油行驶了100英里。\n   - 因此，每加仑汽油可以行驶的距离是：\\( \\frac{100 \\text{ 英里}}{8 \\text{ 加仑}} = 12.5 \\text{ 英里/加仑} \\)。\n\n3. **计算油箱满时可以行驶的总距离**：\n   - 油箱满时有12加仑汽油。\n   - 每加仑可以行驶12.5英里。\n   - 因此，油箱满时可以行驶的总距离是：\\( 12 \\text{ 加仑} \\times 12.5 \\text{ 英里/加仑} = 150 \\text{ 英里} \\)。\n\n因此，Sophia在油箱满的情况下可以行驶150英里。The answer is 150.",
+      "pred": "150",
+      "gt": "300",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 65,
+      "output": "Sure, let's break this down step by step:\n\n1. **Time spent watching TV per session:** Jim spends 2 hours watching TV.\n2. **Time spent reading per session:** He reads for half the time he watches TV, which is \\( \\frac{2}{2} = 1 \\) hour.\n3. **Total time spent per session:** This is the sum of watching TV and reading, which is \\( 2 + 1 = 3 \\) hours.\n4. **Frequency of sessions per week:** He does this 3 times a week.\n5. **Weekly total time:** Therefore, in one week, he spends \\( 3 \\times 3 = 9 \\) hours.\n6. **Total time over 4 weeks:** To find out how much time he spends over 4 weeks, we multiply the weekly total by 4, which gives us \\( 9 \\times 4 = 36 \\) hours.\n\nThe answer is 36.",
+      "pred": "36",
+      "gt": "36",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 66,
+      "output": "Sure, let's break this down step by step:\n\n1. **Number of Schools**: There are 4 schools participating in the basketball competition.\n\n2. **Number of Teams per School**: Each school sends one girls' team and one boys' team.\n   - So, each school sends 2 teams.\n\n3. **Number of Players per Team**: Each team consists of 5 players.\n\n4. **Number of Coaches per School**: Each school also sends one coach for each team.\n   - So, each school sends 2 coaches.\n\nNow, let's calculate the total number of people sent by all the schools:\n\n- **Players**: \n  - Number of players per team = 5\n  - Number of teams per school = 2 (girls' and boys')\n  - Total players per school = 5 * 2 = 10\n  - Total players from all schools = 10 * 4 = 40\n\n- **Coaches**: \n  - Number of coaches per school = 2\n  - Total coaches from all schools = 2 * 4 = 8\n\nAdding the players and coaches together gives us the total number of people sent by all the schools:\n\n- Total people = Total players + Total coaches\n- Total people = 40 + 8 = 48\n\nThe answer is 48.",
+      "pred": "48",
+      "gt": "48",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 67,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道有175颗宝石是钻石（即：钻石的数量 = 175）。\n\n接下来，题目中提到，钻石的数量比红宝石多35颗。因此，红宝石的数量为：\n\\[ \\text{红宝石数量} = \\text{钻石数量} - 35 = 175 - 35 = 140 \\]\n\n然后，题目还告诉我们，珍珠的数量是红宝石数量的两倍。所以，珍珠的数量为：\n\\[ \\text{珍珠数量} = 2 \\times \\text{红宝石数量} = 2 \\times 140 = 280 \\]\n\n最后，我们需要计算所有这些宝石的总数。将钻石、红宝石和珍珠的数量加起来：\n\\[ \\text{总数量} = \\text{钻石数量} + \\text{红宝石数量} + \\text{珍珠数量} = 175 + 140 + 280 = 695 \\]\n\n因此，答案是：The answer is 695。",
+      "pred": "695",
+      "gt": "595",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 68,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道学校里有60名女生。根据题目描述，男生的数量是女生的两倍，所以男生的数量为 \\(60 \\times 2 = 120\\) 名。\n\n接下来，我们计算总的学生数量：\n\\[60（女生）+ 120（男生）= 180\\] 名学生。\n\n题目还告诉我们，每个老师负责5名学生。因此，为了找出老师的人数，我们需要用总学生数除以每名老师的平均学生数：\n\\[180 \\div 5 = 36\\]\n\n所以，学校里有36名老师。\n\nThe answer is 36.",
+      "pred": "36",
+      "gt": "36",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 69,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道在8周后，贝尔总共有了$100。而在这8周里，他每周收到了$5的零用钱。因此，我们先计算这8周他总共收到的零用钱是多少。\n\n\\[ 8 \\text{周} \\times \\$5/\\text{周} = \\$40 \\]\n\n这意味着，在这8周里，贝尔通过零用钱总共增加了$40。\n\n既然贝尔最终有$100，并且我们知道这其中包括了从零用钱中得到的$40，那么我们可以推断出他最初有多少资金。\n\n\\[ \\$100 - \\$40 = \\$60 \\]\n\n所以，贝尔最初有$60。\n\nThe answer is 60.",
+      "pred": "60",
+      "gt": "60",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 70,
+      "output": "好的，让我们一步步来计算：\n\n1. **计算每天的收入**：\n   - 周一到周日（共6天），每天有5节课，每节课有15名学生。\n   - 每名学生的费用是$15.00。\n\n2. **周一至周五的收入**：\n   - 每天收入 = 5节课 × 15名学生 × $15.00/名学生 = $1125.00\n\n3. **周六的收入**：\n   - 周六有8节课，每节课有15名学生。\n   - 每名学生的费用是$15.00。\n   - 每天收入 = 8节课 × 15名学生 × $15.00/名学生 = $1800.00\n\n4. **一周总收入**：\n   - 总收入 = (周一至周五的收入) + (周六的收入)\n   - 总收入 = ($1125.00 × 6天) + $1800.00 = $6750.00 + $1800.00 = $8550.00\n\n因此，她一周可以赚得$8550.00。\n\nThe answer is 8550.",
+      "pred": "8550",
+      "gt": "7425",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 71,
+      "output": "To determine the total number of instructions Kelyan needs to read to make two types of beans, let's break it down step by step:\n\n1. The first method has 20 instructions.\n2. The second method has double the number of instructions as the first method, which means it has \\(2 \\times 20 = 40\\) instructions.\n\nNow, to make one bean using each method:\n- For the first type of bean, Kelyan reads 20 instructions.\n- For the second type of bean, Kelyan reads 40 instructions.\n\nAdding these together gives us the total number of instructions for making both types of beans:\n\\[ 20 + 40 = 60 \\]\n\nTherefore, the answer is 60.",
+      "pred": "60",
+      "gt": "60",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 72,
+      "output": "好的，让我们一步一步来计算：\n\n1. **计算从卖布朗尼获得的收入：**\n   - 每个布朗尼的价格是 $3。\n   - 他卖出了 43 个布朗尼。\n   - 因此，从布朗尼获得的总收入是 \\(43 \\times 3 = 129\\) 美元。\n\n2. **计算从卖芝士蛋糕获得的收入：**\n   - 每块芝士蛋糕的价格是 $4。\n   - 他卖出了 23 块芝士蛋糕。\n   - 因此，从芝士蛋糕获得的总收入是 \\(23 \\times 4 = 92\\) 美元。\n\n3. **计算总收入：**\n   - 总收入 = 布朗尼收入 + 芝士蛋糕收入\n   - 总收入 = \\(129 + 92 = 221\\) 美元\n\n因此，汤米总共赚了 221 美元。 \n\nThe answer is 221.",
+      "pred": "221",
+      "gt": "221",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 73,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，计算总成本：\n- 每个手机的价格是 $150。\n- 总共购买了 5 部手机。\n因此，总成本 = $150 × 5 = $750。\n\n接下来，考虑每部手机的 2% 利息：\n- 每部手机的利息 = $150 × 2% = $150 × 0.02 = $3。\n\n这意味着每个月每部手机需要支付的金额包括本金和利息：\n- 每月每部手机的总费用 = $150 + $3 = $153。\n\n最后，计算每月需要支付的总金额：\n- 每月总费用 = $153 × 5 = $765。\n\n但是，这个计算方法假设所有手机的利息是在每个月末一次性加到本金上的，并且在支付时一并结算。实际上，题目中的描述可能意味着利息是按月复利计算的，但根据题目的描述，我们更倾向于理解为每月支付一次，每次支付包含本金和当月的利息。\n\n因此，每月需要支付的总金额是 $765。\n\nThe answer is 765.",
+      "pred": "765",
+      "gt": "255",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 74,
+      "output": "Sure, let's break down the problem step by step.\n\nFirst, we need to calculate the price of each type of flower after rounding them to the nearest whole dollar:\n\n- Genda (पेंडाज): $2.74 rounds to $3.\n- Petunia (पेटूनिया): $1.87 rounds to $2.\n- Begonia (बेगोनिया): $2.12 rounds to $2.\n\nNext, we'll calculate the total revenue from each type of flower:\n\n- For Genda: \\( 12 \\text{ flowers} \\times \\$3 = \\$36 \\).\n- For Petunia: \\( 9 \\text{ flowers} \\times \\$2 = \\$18 \\).\n- For Begonia: \\( 17 \\text{ flowers} \\times \\$2 = \\$34 \\).\n\nFinally, we add up the total revenue from all types of flowers:\n\n\\[ \\$36 + \\$18 + \\$34 = \\$88 \\]\n\nThe answer is 88.",
+      "pred": "88",
+      "gt": "88",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 75,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道每一层的面积是其下面一层的一半。这意味着每上升一层，面积就会减半。\n\n给定最上面一层的面积是16平方英尺。\n\n第二层的面积将是第一层的一半，即 \\(16 \\div 2 = 8\\) 平方英尺。\n\n第三层的面积将是第二层的一半，即 \\(8 \\div 2 = 4\\) 平方英尺。\n\n第四层的面积将是第三层的一半，即 \\(4 \\div 2 = 2\\) 平方英尺。\n\n现在我们有四个不同层的面积：16平方英尺、8平方英尺、4平方英尺和2平方英尺。\n\n为了找到平均面积，我们需要将所有面积加起来，然后除以层数（在这个例子中是4）。\n\n\\[ \\text{总面积} = 16 + 8 + 4 + 2 = 30 \\]\n\n\\[ \\text{平均面积} = \\frac{\\text{总面积}}{\\text{层数}} = \\frac{30}{4} = 7.5 \\]\n\n因此，一个层次的平均面积是7.5平方英尺。\n\nThe answer is 7.5.",
+      "pred": "7.5",
+      "gt": "60",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 76,
+      "output": "好的，让我们一步一步来计算。\n\n首先，我们知道塞西莉亚需要在前180天每天给小狗喂1杯食物。因此，在这180天里，她总共需要的食物量是：\n\\[ 180 \\text{天} \\times 1 \\text{杯/天} = 180 \\text{杯} \\]\n\n接下来，我们知道每袋食物含有110杯。所以，为了计算出在前一年（假设为365天）里，塞西莉亚需要多少袋食物，我们先计算出剩余的天数和所需的食物量：\n\\[ 365 \\text{天} - 180 \\text{天} = 185 \\text{天} \\]\n\\[ 185 \\text{天} \\times 2 \\text{杯/天} = 370 \\text{杯} \\]\n\n现在，我们知道了整个一年所需的总食物量：\n\\[ 180 \\text{杯} + 370 \\text{杯} = 550 \\text{杯} \\]\n\n最后，我们需要计算出需要多少袋食物来满足这些需求：\n\\[ \\frac{550 \\text{杯}}{110 \\text{杯/袋}} = 5 \\text{袋} \\]\n\n因此，塞西莉亚在前一年将使用5袋食物。\n\nThe answer is 5.",
+      "pred": "5",
+      "gt": "5",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 77,
+      "output": "让我们逐步分析这个问题：\n\n1. **确定萨拉洗的衣服数量**：\n   - 萨拉洗了400磅的衣服。\n\n2. **确定瑞蒙德洗的衣服数量**：\n   - 瑞蒙德比萨拉少洗一半的衣服，所以瑞蒙德洗的衣服数量是萨拉的一半。\n   - \\( \\frac{400}{2} = 200 \\)磅。\n\n3. **确定大卫洗的衣服数量**：\n   - 萨拉洗的衣服数量是大卫的4倍，所以大卫洗的衣服数量是萨拉的四分之一。\n   - \\( \\frac{400}{4} = 100 \\)磅。\n\n4. **计算瑞蒙德和大卫洗的衣服数量之间的差异**：\n   - 瑞蒙德洗了200磅，大卫洗了100磅。\n   - 因此，瑞蒙德比大卫多洗的衣服数量为：\\( 200 - 100 = 100 \\)磅。\n\n所以，瑞蒙德和大卫之间洗的衣服数量差异是100磅。The answer is 100.",
+      "pred": "100",
+      "gt": "100",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 78,
+      "output": "To determine how much money Vincent can save by choosing the more cost-effective option for buying 18 flowers, we need to compare the total cost of buying 18 flowers using the two different packaging options.\n\nFirst, let's calculate the cost if Vincent buys the packages containing 3 flowers each at $2.50 per package:\n\n- Number of packages needed: \\( \\frac{18}{3} = 6 \\)\n- Total cost: \\( 6 \\times \\$2.50 = \\$15.00 \\)\n\nNext, let's calculate the cost if Vincent buys the packages containing 2 flowers each at $1 per package:\n\n- Number of packages needed: \\( \\frac{18}{2} = 9 \\)\n- Total cost: \\( 9 \\times \\$1.00 = \\$9.00 \\)\n\nNow, we compare the two total costs to find out how much money Vincent can save by choosing the cheaper option:\n\n- Cost with 3-flower packages: \\$15.00\n- Cost with 2-flower packages: \\$9.00\n\nThe difference in cost between the two options is:\n\n\\( \\$15.00 - \\$9.00 = \\$6.00 \\)\n\nTherefore, Vincent can save $6.00 by choosing the more cost-effective option.\n\nThe answer is 6.",
+      "pred": "6",
+      "gt": "6",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 79,
+      "output": "Sure, let's break this down step by step:\n\n1. **Original Price**: The original price for grooming the dog is $100.\n2. **Discount Offered**: The groomer offers a 30% discount to new customers.\n3. **Calculating Discount Amount**: To find out how much the discount is, we calculate 30% of $100.\n   - \\( 30\\% \\) of $100 = \\( \\frac{30}{100} \\times 100 \\) = $30.\n4. **Final Price Calculation**: Subtract the discount amount from the original price to get the final price.\n   - Final price = Original price - Discount amount = $100 - $30 = $70.\n\nThe answer is 70.",
+      "pred": "70",
+      "gt": "70",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 80,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，两个女孩各自得到了24升水的1/6部分。这意味着每个女孩得到的水量是：\n\\[ 24 \\times \\frac{1}{6} = 4 \\text{ 升} \\]\n\n所以，两个女孩一共得到的水量是：\n\\[ 4 \\times 2 = 8 \\text{ 升} \\]\n\n接下来，一个男孩又额外得到了6升水。因此，现在总的水量是：\n\\[ 8 + 6 = 14 \\text{ 升} \\]\n\n但是题目问的是“还剩下多少水”，而我们已经计算了所有分配出去的水量，即总共分配出去了14升水。这意味着实际上没有剩余任何水。\n\n所以，答案是：0。",
+      "pred": "0",
+      "gt": "10",
+      "correct": false,
+      "format_ok": false
+    },
+    {
+      "id": 81,
+      "output": "Sure, let's break it down step by step:\n\n1. Initially, Charlie had 10 stickers.\n2. He bought 21 more stickers at the mall, so now he has:\n   \\(10 + 21 = 31\\) stickers.\n3. On his birthday, he received 23 more stickers, making the total:\n   \\(31 + 23 = 54\\) stickers.\n4. He gave 9 stickers to his sister, leaving him with:\n   \\(54 - 9 = 45\\) stickers.\n5. He used 28 stickers for a greeting card, so now he has:\n   \\(45 - 28 = 17\\) stickers.\n\nThe answer is 17.",
+      "pred": "17",
+      "gt": "17",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 82,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道格蕾丝的体重是125磅。\n\n接下来，我们需要计算亚历克斯的体重。题目说亚历克斯的体重是格蕾丝体重的4倍再减去2磅。所以，我们先计算格蕾丝体重的4倍：\n\\[ 125 \\times 4 = 500 \\text{磅} \\]\n\n然后从这个结果中减去2磅：\n\\[ 500 - 2 = 498 \\text{磅} \\]\n\n现在我们知道了亚历克斯的体重是498磅。\n\n最后，我们要计算两人总重量，即格蕾丝和亚历克斯的体重之和：\n\\[ 125 + 498 = 623 \\text{磅} \\]\n\n因此，答案是：The answer is 623.",
+      "pred": "623",
+      "gt": "623",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 83,
+      "output": "好的，让我们一步一步来计算：\n\n1. **计算总共有多少朵玫瑰**：\n   - 每棵树上有25朵玫瑰。\n   - 总共有3棵树。\n   - 因此，总共的玫瑰数量是 \\(3 \\times 25 = 75\\) 朵。\n\n2. **计算所有玫瑰上的总共有多少根刺**：\n   - 每朵玫瑰上有8根刺。\n   - 总共有75朵玫瑰。\n   - 因此，总的刺的数量是 \\(75 \\times 8 = 600\\) 根。\n\n所以，最终的答案是：The answer is 600。",
+      "pred": "600",
+      "gt": "600",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 84,
+      "output": "To solve this problem, let's break it down into steps:\n\n1. Let the number of matches won be \\( W \\).\n2. According to the problem, the team lost \\( W + 8 \\) matches.\n3. The total number of matches played is the sum of matches won and matches lost, which is given as 22.\n\nSo, we can write the equation as:\n\\[ W + (W + 8) = 22 \\]\n\nSimplifying the equation:\n\\[ 2W + 8 = 22 \\]\n\nSubtract 8 from both sides:\n\\[ 2W = 14 \\]\n\nDivide both sides by 2:\n\\[ W = 7 \\]\n\nTherefore, the team won 7 matches.\n\nThe answer is 7.",
+      "pred": "7",
+      "gt": "15",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 85,
+      "output": "让我们逐步分析这个问题：\n\n1. **确定每年的假期数量**：根据题目，Rajai 每年都会去4次。\n2. **计算从23岁到34岁的年数**：从23岁开始，到34岁结束，共经历了 \\(34 - 23 = 11\\) 年。\n3. **计算总假期次数**：在这11年内，每年都有4次假期，所以总共是 \\(11 \\times 4 = 44\\) 次。\n\n因此，Rajai 现在有44件印有不同年份纪念标志的T恤。\n\nThe answer is 44.",
+      "pred": "44",
+      "gt": "44",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 86,
+      "output": "Sure, let's break down the problem step by step:\n\n1. **First alarm**: The alarm rings 4 times.\n2. **Second alarm**: It rings 3 times more than the first one, so it rings \\(4 \\times 3 = 12\\) times.\n3. **Third alarm**: It rings half as many times as the second one, so it rings \\(12 / 2 = 6\\) times.\n\nNow, we add up all the times the alarm rings:\n- First alarm: 4 times\n- Second alarm: 12 times\n- Third alarm: 6 times\n\nSo, the total number of times the alarm rings is \\(4 + 12 + 6 = 22\\).\n\nThe answer is 22.",
+      "pred": "22",
+      "gt": "22",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 87,
+      "output": "让我们逐步分析这个问题。\n\n首先，我们需要明确几个关键点：\n- 每位员工每月获得的固定奖金是$600。\n- 员工在公司工作满5年后，其工资每年会增加初始工资的10%。\n- Silvie已经在公司工作了5年，并且我们关注的是她工作了3年的工资情况。\n\n由于Silvie已经工作了5年，根据公司的政策，她的工资应该已经增加了。但是题目要求我们计算她在工作了3年后的情况，所以我们需要先确定她工作3年后的工资情况。\n\n假设Silvie的初始工资为X美元，则：\n- 第一年结束时，她的工资将是 \\(X + X \\times 10\\% = 1.1X\\)。\n- 第二年结束时，她的工资将是 \\(1.1X + 1.1X \\times 10\\% = 1.1 \\times 1.1X = 1.21X\\)。\n- 第三年结束时，她的工资将是 \\(1.21X + 1.21X \\times 10\\% = 1.21 \\times 1.1X = 1.331X\\)。\n\n因此，在工作了3年后，Silvie的工资将是初始工资的1.331倍。\n\n但是，题目没有给出Silvie的初始工资，所以我们无法直接计算出具体的金额。不过，我们可以得出结论，Silvie在工作了3年后，她的工资将是初始工资的1.331倍。\n\n由于题目要求我们计算的是3年后的情况，而Silvie实际上已经工作了5年，所以她的工资已经按照公司政策调整过。因此，我们需要考虑的是她工作5年后的工资情况。\n\n工作5年后，她的工资将是初始工资的 \\(1.1^5\\) 倍，即 \\(1.1 \\times 1.1 \\times 1.1 \\times 1.1 \\times 1.1 = 1.61\\) 倍。\n\n因此，Silvie在工作了3年后（实际上是工作了5年后），她的工资将是初始工资的1.61倍。\n\n由于题目没有提供初始工资的具体数值，我们只能得出这个比例关系。但如果我们假设初始工资为X美元，那么她的工资将是 \\(1.61X\\) 美元。\n\n考虑到每月固定奖金为$600，我们还需要",
+      "pred": "600",
+      "gt": "9360",
+      "correct": false,
+      "format_ok": false
+    },
+    {
+      "id": 88,
+      "output": "好的，我们可以通过设立方程来解决这个问题。设M为马里恩卖出的唱片数量，H为哈拉尔德卖出的唱片数量。\n\n根据题目信息，我们可以得到以下两个方程：\n\n1. \\(M = 10H\\) （马里恩卖出的唱片是哈拉尔德的10倍）\n2. \\(M + H = 88,000\\) （两人一共卖出了88,000张唱片）\n\n我们可以先用第一个方程解出\\(M\\)，然后代入第二个方程求解\\(H\\)。\n\n从第一个方程中，我们知道\\(M = 10H\\)。\n\n将这个关系代入第二个方程中，得到：\n\\[10H + H = 88,000\\]\n\\[11H = 88,000\\]\n\n接下来解这个方程找到\\(H\\)：\n\\[H = \\frac{88,000}{11} = 8,000\\]\n\n所以，哈拉尔德卖出了8,000张唱片。\n\nThe answer is 8,000.",
+      "pred": "8000",
+      "gt": "8000",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 89,
+      "output": "好的，让我们一步步来计算：\n\n1. **确定实际需要的礼物袋数量**：\n   - 总共邀请了16位客人。\n   - 根据题目，只有3/4的客人会来，即 \\(16 \\times \\frac{3}{4} = 12\\)。\n\n2. **计算总花费**：\n   - 每个礼物袋的价格是$2。\n   - 因此，总共需要\\(12 \\times 2 = 24\\)美元。\n\n所以，克里斯蒂娜将需要花费$24用于礼物袋。\n\nThe answer is 24.",
+      "pred": "24",
+      "gt": "24",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 90,
+      "output": "Sure, let's break this down step by step:\n\n1. **Calculate the amount of salad eaten by adults:**\n   - Each adult eats 10 pounds of salad.\n   - There are 20 adults.\n   - Total salad for adults = \\(20 \\text{ adults} \\times 10 \\text{ pounds/adult} = 200 \\text{ pounds}\\).\n\n2. **Calculate the amount of salad eaten by children:**\n   - Each child eats half the amount an adult eats, so each child eats \\(10 \\text{ pounds} / 2 = 5 \\text{ pounds}\\).\n   - There are 5 children.\n   - Total salad for children = \\(5 \\text{ children} \\times 5 \\text{ pounds/child} = 25 \\text{ pounds}\\).\n\n3. **Add the amounts together to find the total amount of salad needed:**\n   - Total salad needed = Salad for adults + Salad for children\n   - Total salad needed = \\(200 \\text{ pounds} + 25 \\text{ pounds} = 225 \\text{ pounds}\\).\n\nThe answer is 225.",
+      "pred": "225",
+      "gt": "225",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 91,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n1. **确定每个个体的动物数量：**\n   - 根据题目，我们知道：\n     - 印度教徒（假设这里指的是“Jain”，即印度教徒）有3倍于马尔西娅的牛。\n     - 马尔西娅有比辛迪多2只的牛。\n     - 辛迪有4只牛。\n\n2. **计算马尔西娅的牛的数量：**\n   - 辛迪有4只牛。\n   - 马尔西娅比辛迪多2只牛，所以马尔西娅有 \\(4 + 2 = 6\\) 只牛。\n\n3. **计算印度教徒的牛的数量：**\n   - 印度教徒有的牛是马尔西娅的3倍，所以印度教徒有 \\(6 \\times 3 = 18\\) 只牛。\n\n4. **计算总共有多少只牛：**\n   - 将所有人的牛加起来：印度教徒的18只 + 马尔西娅的6只 + 辛迪的4只 = \\(18 + 6 + 4 = 28\\) 只牛。\n\n因此，三个人总共有的牛的数量是28只。\n\nThe answer is 28.",
+      "pred": "28",
+      "gt": "28",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 92,
+      "output": "让我们逐步分析这个问题：\n\n1. 首先，我们知道詹姆斯的年龄是10岁。\n2. 詹姆斯比科里年轻1岁，所以科里的年龄是詹姆斯的年龄加上1岁，即 \\(10 + 1 = 11\\) 岁。\n3. 现在我们知道艾米比科里年轻2岁，所以艾米的年龄是科里的年龄减去2岁，即 \\(11 - 2 = 9\\) 岁。\n4. 最后，艾米比杰克逊年轻5岁，所以杰克逊的年龄是艾米的年龄加上5岁，即 \\(9 + 5 = 14\\) 岁。\n\n因此，杰克逊的年龄是14岁。\n\nThe answer is 14.",
+      "pred": "14",
+      "gt": "4",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 93,
+      "output": "好的，让我们一步步来分析这个问题。\n\n首先，我们知道：\n- 原本，杰拉德比李快2秒完成400米赛跑。\n- 李用时38秒完成400米赛跑。\n\n这意味着在改变饮食之前，杰拉德完成400米赛跑的时间是：\n\\[ 38 - 2 = 36 \\text{秒} \\]\n\n接下来，杰拉德改变了饮食后，他的速度提高了10%，这意味着他现在完成相同距离所需的时间会减少。速度和时间的关系是成反比的，即速度增加10%，意味着时间减少了原时间的10%。\n\n计算杰拉德新的完成时间：\n\\[ 36 \\text{秒} \\times (1 - 0.10) = 36 \\text{秒} \\times 0.90 = 32.4 \\text{秒} \\]\n\n因此，改变饮食后的杰拉德可以在32.4秒内完成400米赛跑。\n\nThe answer is 32.4.",
+      "pred": "32.4",
+      "gt": "36",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 94,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道每只狗有2只鸟，所以狗的数量乘以2就是鸟的数量。给定狗的数量是60，那么鸟的数量就是：\n\\[ 60 \\text{ dogs} \\times 2 = 120 \\text{ birds} \\]\n\n接下来，我们知道了在某个社区中，鸟和狗的总数比寄生鸟的数量少12。设寄生鸟的数量为 \\(x\\)，则：\n\\[ x = 60 \\text{ dogs} + 120 \\text{ birds} + 12 \\]\n\n现在我们可以计算寄生鸟的总数：\n\\[ x = 60 + 120 + 12 = 192 \\]\n\n因此，这个社区里共有192只寄生鸟。\n\n最后，我们需要找出社区里所有宠物动物的总数。宠物动物包括狗、鸟和寄生鸟，所以总数是：\n\\[ 60 \\text{ dogs} + 120 \\text{ birds} + 192 \\text{ parasitic birds} \\]\n\n将这些数值加起来得到总数：\n\\[ 60 + 120 + 192 = 372 \\]\n\n所以，这个社区里共有372只宠物动物。\n\nThe answer is 372.",
+      "pred": "372",
+      "gt": "348",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 95,
+      "output": "好的，我们一步步来解决这个问题。\n\n首先，我们知道班级里总共有200名学生。其中2/5的学生是男生，那么男生的数量就是：\n\\[ \\frac{2}{5} \\times 200 = 80 \\]\n\n剩下的学生自然是女生，所以女生的数量为：\n\\[ 200 - 80 = 120 \\]\n\n题目还告诉我们，在女生中，有2/3的女生是女孩童子军成员。因此，女孩童子军成员的数量为：\n\\[ \\frac{2}{3} \\times 120 = 80 \\]\n\n这意味着不是女孩童子军成员的女生数量为：\n\\[ 120 - 80 = 40 \\]\n\n所以，没有成为女孩童子军的女生数量是40人。\n\nThe answer is 40.",
+      "pred": "40",
+      "gt": "40",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 96,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n1. 首先，我们知道哈里睡了9个小时。\n2. 然后，詹姆斯只睡了哈里的睡眠时间的\\( \\frac{2}{3} \\)。这意味着詹姆斯的睡眠时间是 \\( 9 \\times \\frac{2}{3} = 6 \\) 小时。\n3. 接下来，我们计算哈里比詹姆斯多睡了多少小时：\\( 9 - 6 = 3 \\) 小时。\n\n所以，哈里比詹姆斯多睡了3个小时。\n\nThe answer is 3.",
+      "pred": "3",
+      "gt": "3",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 97,
+      "output": "To solve this problem, let's break it down into steps:\n\n1. **Determine the volume of one tomato after cooking:** Since the volume of tomatoes reduces to half when cooked, and each cooked tomato is equivalent to 8 ounces (half of 16 ounces), we can say that each tomato before cooking is 16 ounces.\n\n2. **Calculate the number of tomatoes needed for 32 ounces of sauce:** Given that each cooked tomato yields 8 ounces of sauce, we need to find out how many cooked tomatoes are required to make 32 ounces of sauce.\n   - \\( \\text{Number of cooked tomatoes} = \\frac{\\text{Total sauce}}{\\text{Sauce per tomato}} = \\frac{32 \\text{ ounces}}{8 \\text{ ounces/tomato}} = 4 \\text{ tomatoes} \\)\n\n3. **Determine the number of raw tomatoes needed:** Since each cooked tomato is derived from two raw tomatoes (because the volume reduces to half), we need to double the number of cooked tomatoes to get the number of raw tomatoes.\n   - \\( \\text{Number of raw tomatoes} = 4 \\text{ cooked tomatoes} \\times 2 = 8 \\text{ raw tomatoes} \\)\n\nTherefore, Freda used 8 tomatoes to make 32 ounces of sauce.\n\nThe answer is 8.",
+      "pred": "8",
+      "gt": "12",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 98,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n1. **初始情况**：开始时，路上有30辆汽车。\n2. **第一阶段（前15分钟）**：在交通堵塞的前15分钟里，有一些汽车离开了。我们设这个数量为X。\n3. **第二阶段（接下来的15分钟）**：在交通堵塞的接下来的15分钟里，又有20辆车离开了。\n4. **剩余车辆**：最后剩下5辆车没有离开。\n\n我们知道总共有30辆车，其中5辆车没有离开，所以剩下的25辆车是在前两个阶段离开的。即：\n\\[ X + 20 = 25 \\]\n\n从上面的等式中解出X：\n\\[ X = 25 - 20 \\]\n\\[ X = 5 \\]\n\n因此，在交通堵塞的前15分钟里，有5辆车离开了。\n\nThe answer is 5.",
+      "pred": "5",
+      "gt": "5",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 99,
+      "output": "让我们一步步来分析这个问题：\n\n1. **玛丽收到的植物数量**：玛丽收到了18株新的落叶植物。\n2. **玛丽家中的窗户数量及每窗户已有植物的数量**：玛丽的家里有40个窗户，每个窗户已经有2株落叶植物。\n3. **玛丽决定分享的植物数量**：玛丽决定从每个窗户中拿出1株植物给朋友和家人。\n\n首先计算玛丽家中原有的植物总数：\n\\[ 40 \\text{个窗户} \\times 2 \\text{株植物/窗户} = 80 \\text{株植物} \\]\n\n然后加上玛丽新收到的植物：\n\\[ 80 \\text{株植物} + 18 \\text{株植物} = 98 \\text{株植物} \\]\n\n接下来，计算玛丽将要分享出去的植物数量：\n\\[ 40 \\text{个窗户} \\times 1 \\text{株植物/窗户} = 40 \\text{株植物} \\]\n\n最后，计算玛丽最终剩余的植物数量：\n\\[ 98 \\text{株植物} - 40 \\text{株植物} = 58 \\text{株植物} \\]\n\n因此，玛丽最终会剩下58株落叶植物。",
+      "pred": "58",
+      "gt": "58",
+      "correct": true,
+      "format_ok": false
+    },
+    {
+      "id": 100,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n1. 第一个朋友按了门铃20次。\n2. 第二个朋友比第一个朋友多按了1/4的次数。这意味着第二个朋友按了 \\(20 + \\frac{1}{4} \\times 20 = 20 + 5 = 25\\) 次。\n3. 第三个朋友比第四个朋友多按了10次。既然第四个朋友按了60次，那么第三个朋友按了 \\(60 + 10 = 70\\) 次。\n4. 第四个朋友按了60次。\n\n现在我们把所有的次数加起来：\n- 第一个朋友：20次\n- 第二个朋友：25次\n- 第三个朋友：70次\n- 第四个朋友：60次\n\n总共是 \\(20 + 25 + 70 + 60 = 175\\) 次。\n\n所以，门铃总共被按了175次。\n\nThe answer is 175.",
+      "pred": "175",
+      "gt": "175",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 101,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，计算总共需要阅读的页数：\n- 科学：4页\n- 社会研究：20页\n- 历史：7页\n- 地理：8页\n\n总页数 = 4 + 20 + 7 + 8 = 39页\n\n接下来，我们知道Solomon已经读了15页，并且还有4天时间来完成剩下的阅读任务。因此，他需要在剩下的时间里读完的页数是：\n剩余页数 = 总页数 - 已读页数 = 39 - 15 = 24页\n\n最后，为了找出Solomon每天平均需要读多少页，我们将剩余的页数除以剩余的天数：\n每天需要读的页数 = 剩余页数 / 剩余天数 = 24 / 4 = 6页\n\n所以，Solomon每天需要平均读6页才能在剩下的时间里完成所有的阅读任务。\n\nThe answer is 6.",
+      "pred": "6",
+      "gt": "6",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 102,
+      "output": "To determine how many glasses of water John drinks in a week, let's break down his drinking habits:\n\n1. **Daily Drinking Habit**: John drinks a glass of water with his breakfast, lunch, dinner, and before bed every day.\n   - This amounts to 5 glasses of water per day.\n\n2. **Weekly Drinking Habit**: Since there are 7 days in a week, we can calculate the total number of glasses of water he drinks during the weekdays (Monday through Friday) and the weekend separately.\n\n3. **Weekdays (Monday to Friday)**:\n   - He drinks 5 glasses of water each day.\n   - For 5 days, this totals \\(5 \\text{ glasses/day} \\times 5 \\text{ days} = 25 \\text{ glasses}\\).\n\n4. **Weekend Days (Saturday and Sunday)**:\n   - On Saturday and Sunday, he drinks 5 glasses of water for breakfast, lunch, and dinner but replaces the glass of water before bed with soda.\n   - So, for each weekend day, he drinks \\(5 - 1 = 4\\) glasses of water.\n   - For 2 days, this totals \\(4 \\text{ glasses/day} \\times 2 \\text{ days} = 8 \\text{ glasses}\\).\n\n5. **Total Weekly Consumption**:\n   - Adding the weekday and weekend consumption together gives us \\(25 + 8 = 33\\) glasses of water.\n\nTherefore, the answer is <33>.",
+      "pred": "33",
+      "gt": "26",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 103,
+      "output": "To solve this problem, let's break it down into steps:\n\n1. **Determine the total area of the city**: Since the city is rectangular and each side is 3 miles long, the total area covered by the cloud would be \\(3 \\text{ miles} \\times 42 \\text{ miles} = 126 \\text{ square miles}\\).\n\n2. **Calculate the time to cover the entire area**: We know that the cloud takes 10 minutes to cover an area of 3 miles by 3 miles (9 square miles). To find out how long it will take to cover the entire city, we need to determine how many times the cloud needs to cover an area of 9 square miles to cover the entire city.\n\n   - The total area of the city is 126 square miles.\n   - Each 10-minute period covers 9 square miles.\n   - Therefore, the number of such periods needed to cover the entire city is \\( \\frac{126}{9} = 14 \\).\n\n3. **Calculate the total time**: Since each period takes 10 minutes and there are 14 such periods, the total time taken is \\( 14 \\times 10 = 140 \\) minutes.\n\nThe answer is 140.",
+      "pred": "140",
+      "gt": "140",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 104,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n1. **初始情况**：Poppy最初有1000个拼图块。\n2. **Poppy的操作**：她先放置了拼图块的1/4。这意味着她放置了 \\(1000 \\times \\frac{1}{4} = 250\\) 块。\n3. **剩余的拼图块**：放置了250块后，剩下的拼图块数量是 \\(1000 - 250 = 750\\) 块。\n4. **母亲的操作**：她的母亲接着拿走了剩余拼图块的1/3。这意味着母亲拿走了 \\(750 \\times \\frac{1}{3} = 250\\) 块。\n5. **最终剩余的拼图块**：母亲拿走250块之后，还剩下 \\(750 - 250 = 500\\) 块。\n\n所以，现在需要放置的拼图块数量是500块。\n\nThe answer is 500.",
+      "pred": "500",
+      "gt": "500",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 105,
+      "output": "Sure, let's break this down step by step.\n\n1. First, we know that Amir eats 5 cookies.\n2. Next, we're told that Cody eats 3 times as many cookies as Amir. So, Cody eats \\(3 \\times 5 = 15\\) cookies.\n3. Now, to find out how many cookies they eat together, we add the number of cookies each one eats: \\(5 + 15 = 20\\).\n\nThe answer is 20.",
+      "pred": "20",
+      "gt": "20",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 106,
+      "output": "好的，我们先计算每个箱子的外部体积，然后减去墙壁所占的空间来得到内部体积。\n\n1. **计算每个箱子的外部体积**：\n   - 每个箱子的外部尺寸是：长度 = 5英寸，宽度 = 6英寸，高度 = 4英寸。\n   - 因为每个面的墙壁厚度为1英寸，所以内部的实际尺寸会减少2英寸（每边减少1英寸）。\n   \n2. **计算每个箱子的内部尺寸**：\n   - 内部长度 = 5英寸 - 2英寸 = 3英寸。\n   - 内部宽度 = 6英寸 - 2英寸 = 4英寸。\n   - 内部高度 = 4英寸 - 2英寸 = 2英寸。\n\n3. **计算每个箱子的内部体积**：\n   - 内部体积 = 长度 × 宽度 × 高度 = 3英寸 × 4英寸 × 2英寸 = 24立方英寸。\n\n4. **计算三个箱子的总内部体积**：\n   - 总体积 = 单个箱子的内部体积 × 箱子数量 = 24立方英寸 × 3 = 72立方英寸。\n\n因此，三个箱子的总内部体积是72立方英寸。 \n\nThe answer is 72.",
+      "pred": "72",
+      "gt": "72",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 107,
+      "output": "让我们逐步分析这个问题：\n\n1. **周日和周一**：Franky 每晚都看了他喜欢的节目，共2小时。\n   - 周一：1小时\n   - 周二：1小时\n\n2. **周三**：Franky 看了半小时的节目。\n   - 周三：0.5小时\n\n3. **周四**：Franky 看了两集1小时的节目。\n   - 周四：2小时\n\n4. **周五至周日总时间**：Franky 看了总共7小时的电视。\n   - 周四至周日：7小时 - (1 + 1 + 0.5 + 2) = 2.5小时\n\n现在我们知道周五至周日Franky 看了2.5小时的电视。\n\n5. **周五**：Franky 看了1小时的节目。\n   - 周五：1小时\n\n6. **周六**：Franky 看了剩余的时间。\n   - 周六：2.5 - 1 = 1.5小时\n\n现在我们知道了周六Franky 看了1.5小时的节目。\n\n7. **计算周六看的节目数量**：\n   - 周六看的是30分钟的节目。\n   - 1.5小时 = 30分钟 * 3\n   - 因此，Franky 在周六看了3个30分钟的节目。\n\n8. **确定周五的节目数量**：\n   - 周五看的是1小时的节目。\n   - 1小时 = 60分钟 / 30分钟/集 = 2集\n\n因此，在周五Franky 看了2个30分钟的节目。\n\nThe answer is 2.",
+      "pred": "2",
+      "gt": "3",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 108,
+      "output": "让我们一步步来分析这个问题：\n\n1. **当前情况**：\n   - 现在亨利有110个饼干。\n   - 放置冷却时，有5个饼干掉在地上。\n   - 因此，在放置冷却前，亨利应该有 \\(110 + 5 = 115\\) 个饼干。\n\n2. **目标数量**：\n   - 亨利希望比去年多一倍的饼干，即他希望今年制作的饼干数量是去年的两倍。\n\n3. **计算去年的数量**：\n   - 设去年亨利制作了 \\(x\\) 个饼干。\n   - 根据题目，今年的目标是 \\(2x\\)。\n   - 由于放置冷却后还剩下115个饼干，这意味着 \\(2x - 15 = 115\\)（因为比去年多一倍，但减去了15个）。\n\n4. **解方程**：\n   - \\(2x - 15 = 115\\)\n   - \\(2x = 130\\)\n   - \\(x = 65\\)\n\n因此，亨利去年制作了65个饼干。The answer is 65。",
+      "pred": "65",
+      "gt": "50",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 109,
+      "output": "Sure, let's break this down step by step:\n\n1. **Cost of 10 gallons of petrol:** The cost per gallon of petrol is $3.00. So, for 10 gallons, the total cost would be \\(10 \\times \\$3.00 = \\$30.00\\).\n\n2. **Cashback for 10 gallons:** For each gallon purchased, the app company offers a cashback of $0.20. Therefore, for 10 gallons, the total cashback would be \\(10 \\times \\$0.20 = \\$2.00\\).\n\n3. **Total cost after cashback:** To find out how much the person needs to pay after receiving the cashback, we subtract the total cashback from the total cost of the petrol. So, the amount to be paid is \\(\\$30.00 - \\$2.00 = \\$28.00\\).\n\nThe answer is 28.",
+      "pred": "28",
+      "gt": "28",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 110,
+      "output": "让我们逐步分析这个问题：\n\n1. **计算玛塞尔和贝特里斯各自拥有的卷的数量：**\n   - 贝特里斯的卷：2个宽卷 + 24个长卷 = 26个卷\n   - 玛塞尔的卷：3个宽卷 + 14个长卷 = 17个卷\n\n2. **计算他们总共拥有的卷的数量：**\n   - 总卷数 = 贝特里斯的卷 + 玛塞尔的卷 = 26 + 17 = 43个卷\n\n3. **计算他们平均每人吃了多少卷：**\n   - 平均卷数 = 总卷数 / 2（因为有两个人）= 43 / 2 = 21.5个卷\n\n因此，答案是：21.5。",
+      "pred": "21.5",
+      "gt": "45",
+      "correct": false,
+      "format_ok": false
+    },
+    {
+      "id": 111,
+      "output": "To solve this problem, let's break it down into steps:\n\n1. **Determine the rate of water filling in the boat**: \n   - For every 10 feet the boat moves, it fills 2 liters of water.\n   - This means for every foot, the boat fills \\( \\frac{2}{10} = 0.2 \\) liters of water.\n\n2. **Calculate the distance to the shore**:\n   - It takes 20 seconds to move 10 feet (since it takes 64 seconds to reach the shore and the total time spent moving towards the shore is \\(64 - 20 = 44\\) seconds).\n   - Therefore, the speed of the boat is \\( \\frac{10 \\text{ feet}}{20 \\text{ seconds}} = 0.5 \\text{ feet/second} \\).\n\n3. **Calculate the distance from the boat to the shore when it starts filling water**:\n   - Since it takes 20 seconds to fill up to the point where it starts filling water, the distance covered in those 20 seconds is \\( 20 \\text{ seconds} \\times 0.5 \\text{ feet/second} = 10 \\text{ feet} \\).\n   - This means the boat has already filled \\( 10 \\text{ feet} \\times 0.2 \\text{ liters/foot} = 2 \\text{ liters} \\) of water before starting to fill as it moves towards the shore.\n\n4. **Calculate the remaining distance to the shore**:\n   - The total distance to the shore is the distance covered plus the distance yet to cover, which is \\( 20 \\text{ feet} + 44 \\text{ feet} = 64 \\text{ feet} \\).\n   - The remaining distance to the shore after the boat starts filling water is \\( 64 \\text{ feet} - 10 \\text{ feet} = 54 \\text{ feet} \\).\n\n5. **Calculate the additional water filled while moving towards the shore**:\n   - For the remaining 54 feet, the boat will fill \\( 54 \\text{ feet} \\times 0.2 \\text{ liters/foot} = 10.8 \\text{ liters} \\).\n\n6. **Total water filled**:\n   - Total water filled = initial water filled + additional water filled =",
+      "pred": "6",
+      "gt": "16",
+      "correct": false,
+      "format_ok": false
+    },
+    {
+      "id": 112,
+      "output": "Sure, let's break this down step by step:\n\n1. Each teacher reads 2 lessons per day.\n2. Each lesson uses the whiteboard once.\n3. After each use, the whiteboard is cleaned 3 times.\n\nSo, for each lesson:\n- The whiteboard is used once.\n- The whiteboard is cleaned 3 times after being used.\n\nTherefore, for 2 lessons per day:\n- The whiteboard is used \\(2 \\times 1 = 2\\) times.\n- The whiteboard is cleaned \\(2 \\times 3 = 6\\) times.\n\nAdding these together gives us the total number of times the whiteboard is cleaned in one day:\n- Total cleanings per day = \\(2 + 6 = 8\\).\n\nThe answer is 8.",
+      "pred": "8",
+      "gt": "24",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 113,
+      "output": "Sure, let's break this down step by step:\n\n1. **Daily Planting**: Ryan plants 2 flowers every day.\n2. **Duration**: He does this for 15 days.\n\nSo, the total number of flowers planted in 15 days would be:\n\\[ 2 \\text{ flowers/day} \\times 15 \\text{ days} = 30 \\text{ flowers} \\]\n\nNow, if 5 out of these 30 do not grow, we need to subtract those from the total:\n\\[ 30 \\text{ flowers} - 5 \\text{ flowers that did not grow} = 25 \\text{ flowers} \\]\n\nTherefore, after 15 days, Ryan will have 25 flowers.\n\nThe answer is 25.",
+      "pred": "25",
+      "gt": "25",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 114,
+      "output": "让我们逐步分析这个问题：\n\n1. **确定贾马尔的手机可以存储多少照片**：\n   - 贾马尔的手机可以存储的照片数量为1800张。\n\n2. **确定布里奇特的手机可以存储的照片数量**：\n   - 布里奇特的手机可以存储的照片数量是贾马尔的6倍。\n   - 因此，布里奇特的手机可以存储的照片数量为 \\(1800 \\times 6 = 10800\\) 张。\n\n3. **确定鸟舍中的鸽子数量与布里奇特手机可存储照片数量的关系**：\n   - 布里奇特的手机可以存储的照片数量比鸟舍中鸽子的数量多50倍。\n   - 设鸟舍中的鸽子数量为 \\(x\\)，则有 \\(10800 = x \\times 50\\)。\n\n4. **解方程找到鸟舍中的鸽子数量**：\n   - \\(x = \\frac{10800}{50} = 216\\)。\n\n因此，鸟舍中的鸽子数量为216只。\n\nThe answer is 216.",
+      "pred": "216",
+      "gt": "6",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 115,
+      "output": "让我们一步步来分析这个问题。\n\n首先，计算每种尺寸的木板的成本和售价。\n\n对于2 x 4 x 10尺寸的木板：\n- 每块木板的成本是$10。\n- 总共有10块，所以总成本是 \\(10 \\times 10 = $100\\)。\n- 每块木板的体积是 \\(2 \\times 4 \\times 10 = 80\\) 立方英寸。\n- 因为价格可能基于体积或重量，但题目没有给出具体的价格计算方式，我们假设售价也是基于成本的简单增加。根据题目描述，价格增加了50%，所以每块木板的售价是 \\(10 + (10 \\times 0.5) = $15\\)。\n- 总售价是 \\(10 \\times 15 = $150\\)。\n\n对于4 x 4 x 10尺寸的木板：\n- 每块木板的成本是$16。\n- 总共有5块，所以总成本是 \\(5 \\times 16 = $80\\)。\n- 每块木板的体积是 \\(4 \\times 4 \\times 10 = 160\\) 立方英寸。\n- 根据同样的逻辑，每块木板的售价是 \\(16 + (16 \\times 0.5) = $24\\)。\n- 总售价是 \\(5 \\times 24 = $120\\)。\n\n现在，我们计算总的售价和成本：\n- 总售价是 \\(150 + 120 = $270\\)。\n- 总成本是 \\(100 + 80 = $180\\)。\n\n最后，计算利润：\n- 利润 = 总售价 - 总成本 = \\(270 - 180 = $90\\)。\n\n因此，如果她把所有的木板都卖掉，她将获得$90的利润。\n\nThe answer is 90.",
+      "pred": "90",
+      "gt": "90",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 116,
+      "output": "To solve this problem, we need to understand the ratio and how it applies to the total number of units used.\n\nGiven:\n- The ratio of sugar (chocolate) to water is 7:13.\n- The total number of units used is 120.\n\nStep 1: Understand the ratio.\nThe ratio 7:13 means for every 7 parts of sugar, there are 13 parts of water. So, the total parts are 7 + 13 = 20 parts.\n\nStep 2: Determine the value of one part.\nSince the total number of units is 120, each part in the ratio represents \\( \\frac{120}{20} = 6 \\) units.\n\nStep 3: Calculate the number of units for sugar.\nSince sugar corresponds to 7 parts in the ratio, the number of units used for sugar is \\( 7 \\times 6 = 42 \\).\n\nTherefore, the number of chintz cups (units of sugar) used is 42.\n\nThe answer is 42.",
+      "pred": "42",
+      "gt": "42",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 117,
+      "output": "Sure, let's break this down step by step:\n\n1. John has 3 children.\n2. He buys 2 pairs of shoes for each child.\n3. Each pair of shoes costs $60.\n\nNow, let's calculate the total cost:\n\n- For one child, he buys 2 pairs of shoes, so the cost is \\(2 \\times \\$60 = \\$120\\).\n- Since he has 3 children, the total cost would be \\(3 \\times \\$120 = \\$360\\).\n\nTherefore, the answer is 360. The answer is 360.",
+      "pred": "360",
+      "gt": "360",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 118,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n首先，我们知道第一天有2个集装箱被清点，每个集装箱里有5辆车。所以第一天总共有 \\(2 \\times 5 = 10\\) 辆车。\n\n第二天，总共有30辆车到达港口。既然每个集装箱也包含5辆车，那么我们可以设第二天新到的集装箱数量为x，则有 \\(5x\\) 辆车。\n\n根据题目，第二天到达的车辆总数是30辆，所以我们有方程：\n\\[5x + 10 = 30\\]\n\n解这个方程找到x的值：\n\\[5x = 30 - 10\\]\n\\[5x = 20\\]\n\\[x = 4\\]\n\n所以，第二天有4个集装箱被运抵港口。\n\nThe answer is 4.",
+      "pred": "4",
+      "gt": "4",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 119,
+      "output": "让我们逐步分析这个问题。\n\n1. **初始条件**：\n   - 四年前，艾德里安的工资是40000美元。\n   - 艾德里安的工资比莱拉高30%，这意味着莱拉四年前的工资是 \\( \\frac{40000}{1.3} = 30769.23 \\) 美元（约）。\n\n2. **四年后的变化**：\n   - 艾德里安的工资增加了40%，所以现在他的工资是 \\( 40000 \\times 1.4 = 56000 \\) 美元。\n   - 莱拉的工资也相应地增加了，但题目没有直接给出这个信息。我们需要根据艾德里安和莱拉工资的关系来推算。\n\n3. **莱拉的当前工资**：\n   - 假设莱拉四年前的工资为 \\( L \\)，那么现在她的工资是 \\( L \\times 1.3 \\)。\n   - 根据题目，艾德里安现在的工资比莱拉的当前工资多30%，即 \\( 56000 = (L \\times 1.3) \\times 1.3 \\)。\n   - 解这个方程得到 \\( L \\times 1.3^2 = 56000 \\)，从而 \\( L = \\frac{56000}{1.69} \\approx 33383.53 \\) 美元。\n   - 因此，莱拉现在的工资是 \\( 33383.53 \\times 1.3 = 43398.60 \\) 美元（约）。\n\n4. **计算总工资**：\n   - 艾德里安现在的工资是56000美元。\n   - 莱拉现在的工资是43398.60美元。\n   - 因此，两人的总工资是 \\( 56000 + 43398.60 = 99398.60 \\) 美元。\n\nThe answer is 99398.60.",
+      "pred": "99398.60",
+      "gt": "95200",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 120,
+      "output": "Sure, let's break this down step by step:\n\n1. **Weekly Usage**: Miguel uses 2 pads of paper every week.\n2. **Pads per Week**: He uses 2 pads each week.\n3. **Sheets per Pad**: Each pad contains 30 sheets.\n\nNow, to find out how many sheets he uses in a week:\n\\[ \\text{Sheets per week} = \\text{Number of pads per week} \\times \\text{Sheets per pad} \\]\n\\[ \\text{Sheets per week} = 2 \\times 30 = 60 \\]\n\nNext, to find out how many sheets he uses in a month (assuming a month has about 4 weeks):\n\\[ \\text{Sheets per month} = \\text{Sheets per week} \\times \\text{Weeks per month} \\]\n\\[ \\text{Sheets per month} = 60 \\times 4 = 240 \\]\n\nSo, Miguel uses 240 sheets of paper every month.\n\nThe answer is 240.",
+      "pred": "240",
+      "gt": "240",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 121,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n1. 首先，我们知道Morisset带了5个苹果和8个梨。\n2. 然后，我们知道Caile带的水果是Morisset的两倍的苹果，也就是 \\(2 \\times 5 = 10\\) 个苹果。\n3. Caile还带的是Morisset的一半的梨，即 \\(8 / 2 = 4\\) 个梨。\n4. 接下来，我们计算总共的水果数量：\n   - Morisset带来的总水果数：\\(5 + 8 = 13\\) 个。\n   - Caile带来的总水果数：\\(10 + 4 = 14\\) 个。\n5. 最后，我们将两人带来的所有水果加起来：\\(13 + 14 = 27\\) 个。\n\n所以，Morisset和Caile一共带来了27个水果。 \n\nThe answer is 27.",
+      "pred": "27",
+      "gt": "27",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 122,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n1. **周一**：塞德每天睡了8小时。\n   - 周一的睡眠时间 = 8小时\n\n2. **周二和周三**：塞德每天比平时少睡2小时。\n   - 每天的睡眠时间 = 8小时 - 2小时 = 6小时\n   - 周二和周三的总睡眠时间 = 6小时 × 2天 = 12小时\n\n3. **周四到周日**：塞德每天比周二和周三多睡1小时。\n   - 每天的睡眠时间 = 6小时 + 1小时 = 7小时\n   - 周四到周日的总睡眠时间 = 7小时 × 5天 = 35小时\n\n4. **计算整个星期的总睡眠时间**：\n   - 总睡眠时间 = 周一的睡眠时间 + 周二和周三的总睡眠时间 + 周四到周日的总睡眠时间\n   - 总睡眠时间 = 8小时 + 12小时 + 35小时 = 55小时\n\n因此，塞德在整周内总共睡了55小时。 \n\nThe answer is 55.",
+      "pred": "55",
+      "gt": "48",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 123,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n首先，我们计算罗济在前3个小时能跑多少英里。根据题目描述，罗济以每小时10英里的速度跑3小时，那么她在这段时间内可以跑：\n\\[ 3 \\text{小时} \\times 10 \\frac{\\text{英里}}{\\text{小时}} = 30 \\text{英里} \\]\n\n接下来，我们计算罗济在剩下的时间里能跑多少英里。总共是7个小时，已经用了3个小时，所以剩下4个小时。根据题目描述，罗济以每小时5英里的速度跑这剩下的4个小时，那么她在这段时间内可以跑：\n\\[ 4 \\text{小时} \\times 5 \\frac{\\text{英里}}{\\text{小时}} = 20 \\text{英里} \\]\n\n最后，我们将两段时间内跑的总距离加起来，得到罗济在7小时内总共能跑的距离：\n\\[ 30 \\text{英里} + 20 \\text{英里} = 50 \\text{英里} \\]\n\n因此，罗济在7小时内总共可以跑50英里。\n\nThe answer is 50.",
+      "pred": "50",
+      "gt": "50",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 124,
+      "output": "Let's break down the problem step by step:\n\n1. **Total number of letters**: There are 60 letters in total that need to have stamps attached.\n\n2. **Letters already stamped**: There are 30 letters that already have stamps on them.\n\n3. **Letters yet to be stamped**: Therefore, there are \\(60 - 30 = 30\\) letters that still need stamps.\n\n4. **Proportion of letters being stamped**: Gene stamps one-third of the letters from the unstamped pile.\n\n5. **Number of letters stamped**: Since she stamps one-third of the letters from the unstamped pile, and there are 30 letters left to be stamped, this means she stamps \\( \\frac{1}{3} \\times \\text{unstamped letters} = 30 \\).\n\n6. **Unstamped letters before stamping**: If one-third of the letters are being stamped now, then two-thirds must have been in the pile before any stamping began. So, if \\( x \\) is the original number of unstamped letters, then \\( \\frac{2}{3}x = 30 \\).\n\n7. **Solving for \\( x \\)**: To find \\( x \\), we solve the equation \\( \\frac{2}{3}x = 30 \\). Multiplying both sides by \\( \\frac{3}{2} \\) gives \\( x = 30 \\times \\frac{3}{2} = 45 \\).\n\nSo, originally, there were 45 letters that needed stamps.\n\nThe answer is 45.",
+      "pred": "45",
+      "gt": "10",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 125,
+      "output": "让我们一步步分析这个问题：\n\n1. 最初，Julia 没有塑料杯子，所以她买了一包新的。\n2. Julia 买了这包新杯子后，她的杯子数量增加了。\n3. Julia 的丈夫随后也买了一包新的杯子，并给了她。\n4. Julia 使用了其中的3个杯子来喝。\n5. 最终，Julia 和她的丈夫一起在桌子上放了12个杯子。\n\n我们知道Julia和她的丈夫一共放了12个杯子。Julia使用了3个，这意味着剩下的9个是她的丈夫提供的那包中的。因此，Julia最初买的那包杯子里的杯子数量就是剩余的9个。\n\nThe answer is 9.",
+      "pred": "9",
+      "gt": "10",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 126,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n1. **确定鸡香肠的数量**：迪亚伦买了38根鸡香肠。\n2. **计算鱼香肠的数量**：迪亚伦买的鱼香肠比鸡香肠多6根。因此，鱼香肠的数量是鸡香肠数量加上6，即 \\(38 + 6 = 44\\) 根。\n3. **计算总数量**：现在我们需要把鸡香肠和鱼香肠的数量加起来，得到总共购买的香肠数量。即 \\(38 + 44 = 82\\) 根。\n\n所以，迪亚伦总共买了82根香肠。\n\nThe answer is 82.",
+      "pred": "82",
+      "gt": "82",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 127,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道在艾米去了新学校之后，她拥有的朋友数量增加了20个。这意味着艾米现在有比之前多20个朋友。\n\n接下来，题目告诉我们，如果莉莉有50个朋友，那么艾米的朋友数量就是莉莉的那50个朋友加上额外的20个朋友。\n\n所以，艾米现在的朋友数量是：50 + 20 = 70个朋友。\n\n最后，我们要计算艾米和莉莉一共有多少朋友。我们把艾米的朋友数量（70）和莉莉的朋友数量（50）加起来：\n\n70 + 50 = 120\n\n因此，艾米和莉莉一共拥有120个朋友。\n\nThe answer is 120.",
+      "pred": "120",
+      "gt": "120",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 128,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道：\n- 每个辣椒的价格是15美元。\n- 每个西红柿的价格是每个辣椒价格的3倍。\n- 每个苹果的价格比一个西红柿便宜5美元。\n\n根据这些信息，我们可以计算出：\n1. 每个西红柿的价格：\\(15 \\times 3 = 45\\) 美元。\n2. 每个苹果的价格：\\(45 - 5 = 40\\) 美元。\n\n接下来，我们计算迪伦需要支付的总金额：\n- 4个西红柿的总价：\\(4 \\times 45 = 180\\) 美元。\n- 20个辣椒的总价：\\(20 \\times 15 = 300\\) 美元。\n- 10个苹果的总价：\\(10 \\times 40 = 400\\) 美元。\n\n最后，我们将这些加起来得到总花费：\n\\(180 + 300 + 400 = 880\\) 美元。\n\n所以，迪伦总共会花费880美元。",
+      "pred": "880",
+      "gt": "880",
+      "correct": true,
+      "format_ok": false
+    },
+    {
+      "id": 129,
+      "output": "To calculate the net loss or profit for the hospital from these patient visits, we need to follow these steps:\n\n1. **Calculate the total time spent by all patients in the hospital per day:**\n   - Each patient takes an average of 24 minutes.\n   - There are 500 patients each day.\n   - Total time = \\(500 \\text{ patients} \\times 24 \\text{ minutes/patient}\\).\n\n2. **Convert the total time into hours:**\n   - Since there are 60 minutes in an hour, we divide the total time by 60.\n\n3. **Calculate the cost incurred by the hospital for the doctor's time:**\n   - The doctor charges the hospital $150 per hour.\n   - Cost = (Total time in hours) \\(\\times\\) $150/hour.\n\n4. **Calculate the revenue generated by the hospital from the patients:**\n   - The hospital charges patients $200 per hour.\n   - Revenue = (Total time in hours) \\(\\times\\) $200/hour.\n\n5. **Calculate the net loss or profit:**\n   - Net result = Revenue - Cost.\n\nLet's do the calculations:\n\n1. **Total time spent by patients:**\n   - \\(500 \\text{ patients} \\times 24 \\text{ minutes/patient} = 12000 \\text{ minutes}\\).\n   - Convert minutes to hours: \\(12000 \\text{ minutes} / 60 = 200 \\text{ hours}\\).\n\n2. **Cost incurred by the hospital:**\n   - \\(200 \\text{ hours} \\times \\$150/\\text{hour} = \\$30,000\\).\n\n3. **Revenue generated by the hospital:**\n   - \\(200 \\text{ hours} \\times \\$200/\\text{hour} = \\$40,000\\).\n\n4. **Net result:**\n   - Net result = \\$40,000 - \\$30,000 = \\$10,000.\n\nThe answer is 10000.",
+      "pred": "10000",
+      "gt": "10000",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 130,
+      "output": "Sure, let's break this down step by step:\n\n1. **Initial Number of Elves:** Nissa starts by hiring 60 elves for the Christmas village at her department store.\n\n2. **After Children's Behavior:** After some children's mischievous behavior, one-third of the elves quit their jobs. To find out how many that is, we calculate one-third of 60:\n   \\[\n   \\frac{1}{3} \\times 60 = 20\n   \\]\n   So, 20 elves quit their jobs.\n\n3. **Remaining Elves:** Subtract the number of elves who quit from the initial number to find out how many are left:\n   \\[\n   60 - 20 = 40\n   \\]\n\n4. **After More Troublemaking:** Then, 10 more elves leave because they were pinched by the children. Subtract these from the remaining number:\n   \\[\n   40 - 10 = 30\n   \\]\n\nSo, after all these events, there are 30 elves left.\n\nThe answer is 30.",
+      "pred": "30",
+      "gt": "30",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 131,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n1. 首先，我们知道在五月，Joséf 的开销是 $500。\n2. 然后，在六月，他的开销比五月少了 $60。所以，六月的开销是 $500 - $60 = $440。\n3. 最后，我们要计算两个月的总开销，即五月和六月的开销相加：$500 + $440 = $940。\n\n因此，答案是：The answer is 940。",
+      "pred": "940",
+      "gt": "940",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 132,
+      "output": "好的，让我们一步一步来计算：\n\n1. **计算帕姆的游乐设施费用**：\n   - 帕姆做了两次旋转木马，每次旋转木马的费用是6个票。\n   - 因此，帕姆的总费用是 \\(2 \\times 6 = 12\\) 个票。\n\n2. **计算弗雷德的游乐设施费用**：\n   - 弗雷德做了四次旋转木马，每次旋转木马的费用也是6个票。\n   - 因此，弗雷德的总费用是 \\(4 \\times 6 = 24\\) 个票。\n\n3. **计算两人共同乘坐的碰碰车费用**：\n   - 他们各自乘坐了两次碰碰车，每次碰碰车的费用同样是6个票。\n   - 因此，每人两次碰碰车的费用是 \\(2 \\times 6 = 12\\) 个票。\n   - 由于两人都乘坐了两次，所以总共的费用是 \\(12 + 12 = 24\\) 个票。\n\n4. **计算总费用**：\n   - 将所有费用加起来：帕姆的费用（12个票）加上弗雷德的费用（24个票）加上他们共同乘坐碰碰车的费用（24个票）。\n   - 总计是 \\(12 + 24 + 24 = 60\\) 个票。\n\n因此，他们那天总共使用了60个票。 \n\nThe answer is 60.",
+      "pred": "60",
+      "gt": "60",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 133,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道：\n- 周一（सोमवार）走了4英里。\n- 周三（मंगलवार）走的距离是周一的6倍。\n- 从周一到周三总共走了41英里。\n\n我们可以先计算周三走了多少英里：\n- 周三走的距离 = 周一的距离 × 6 = 4英里 × 6 = 24英里。\n\n接下来，我们计算从周一到周三总共走了多少英里：\n- 周一 + 周三 = 4英里 + 24英里 = 28英里。\n\n最后，我们知道从周一到周三总共走了41英里，所以我们可以计算出周四（बुधवार）走了多少英里：\n- 周四走的距离 = 总距离 - 周一和周三的距离 = 41英里 - 28英里 = 13英里。\n\n因此，周四（बुधवार）走了13英里。\n\nThe answer is 13.",
+      "pred": "13",
+      "gt": "13",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 134,
+      "output": "好的，让我们一步一步来计算：\n\n1. 首先，我们知道汤姆每个月可以得到4次汽车清洗服务。\n2. 汽车清洗的每次费用是$15。\n3. 因此，每个月汤姆需要支付的金额是 \\(4 \\times 15 = 60\\) 美元。\n4. 一年有12个月，所以一年内汤姆需要支付的总金额是 \\(60 \\times 12 = 720\\) 美元。\n\n因此，汤姆一年内在汽车清洗上的花费是720美元。 \n\nThe answer is 720.",
+      "pred": "720",
+      "gt": "720",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 135,
+      "output": "好的，让我们一步步来解决这个问题。\n\n1. **确定Brian的视频游戏数量**：\n   - Brian原本有20个视频游戏。\n   - 在比较之前，Brian丢失了5个视频游戏。\n   - 因此，Brian现在有 \\(20 - 5 = 15\\) 个视频游戏。\n\n2. **计算Bobbie的视频游戏数量**：\n   - Bobbie的视频游戏数量是Brian的视频游戏数量的3倍减去5。\n   - 根据上述计算，Brian现在有15个视频游戏。\n   - 因此，Bobbie的视频游戏数量为 \\(15 \\times 3 - 5 = 45 - 5 = 40\\)。\n\n所以，Bobbie有40个视频游戏。\n\nThe answer is 40.",
+      "pred": "40",
+      "gt": "40",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 136,
+      "output": "好的，让我们一步步来解决这个问题。\n\n1. 首先，我们知道全球共有27只独角兽。\n2. 其中三分之一的独角兽生活在苏格兰高地，所以苏格兰高地的独角兽数量是 \\(27 \\div 3 = 9\\) 只。\n3. 在这9只苏格兰独角兽中，有三分之二的是母独角兽。因此，苏格兰母独角兽的数量是 \\(9 \\times \\frac{2}{3} = 6\\) 只。\n\n所以，苏格兰母独角兽的数量是6只。\n\nThe answer is 6.",
+      "pred": "6",
+      "gt": "6",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 137,
+      "output": "Sure, let's break down the calculation step by step:\n\n1. **Calculate the cost of Rori's order before delivery charges and tip:**\n   - For the $7.50 per item, she orders 2 items: \\(2 \\times \\$7.50 = \\$15.00\\)\n   - For the $1.50 per item, she orders 2 items: \\(2 \\times \\$1.50 = \\$3.00\\)\n   - For the $1.00 per item, she orders 2 items: \\(2 \\times \\$1.00 = \\$2.00\\)\n\n   Adding these together gives us the total cost before delivery charges and tip:\n   \\[\n   \\$15.00 + \\$3.00 + \\$2.00 = \\$20.00\n   \\]\n\n2. **Add the delivery charge:**\n   - The delivery charge is 20% of the total order amount (\\$20.00):\n   \\[\n   20\\% \\text{ of } \\$20.00 = 0.20 \\times \\$20.00 = \\$4.00\n   \\]\n   So, the total after adding the delivery charge is:\n   \\[\n   \\$20.00 + \\$4.00 = \\$24.00\n   \\]\n\n3. **Add the tip:**\n   - The tip is $5.00.\n   So, the final total is:\n   \\[\n   \\$24.00 + \\$5.00 = \\$29.00\n   \\]\n\nThe answer is 29.",
+      "pred": "29",
+      "gt": "29",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 138,
+      "output": "让我们一步步分析这个问题。\n\n首先，我们计算马尔克完成第一个考试所需的时间：\n- 马尔克以每小时5个问题的速度完成了这个考试。\n- 第一个考试有75个问题。\n- 因此，他完成第一个考试需要的时间是 \\(75 \\div 5 = 15\\) 小时。\n\n题目中提到，马尔克实际上只花了8小时完成这个考试，这意味着他实际上没有停下来，而是以同样的速度继续进行。\n\n接下来，我们计算马尔克完成第二个考试所需的时间：\n- 第二个考试有100个问题。\n- 同样的速度下，他完成这些问题需要的时间是 \\(100 \\div 5 = 20\\) 小时。\n\n题目中提到，马尔克实际上只花了6小时完成这个考试。这意味着在这6小时内，他完成了所有的问题。\n\n因此，在这两个考试中，马尔克都没有放弃任何问题。他都以每小时5个问题的速度完成了所有的题目。\n\n所以，答案是：马尔克没有放弃任何问题。\n\nThe answer is 0.",
+      "pred": "0",
+      "gt": "105",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 139,
+      "output": "Sure, let's solve this problem step by step.\n\n1. Let's denote the number of blue gumballs as \\( B \\).\n2. According to the problem, the number of red gumballs is four times the number of blue gumballs plus 22. So, if we denote the number of red gumballs as \\( R \\), then \\( R = 4B + 22 \\).\n3. We know that there are 12 blue gumballs, so \\( B = 12 \\).\n4. Now, substitute \\( B = 12 \\) into the equation for the number of red gumballs:\n   \\[\n   R = 4 \\times 12 + 22\n   \\]\n5. Calculate the right side of the equation:\n   \\[\n   R = 48 + 22 = 70\n   \\]\n\nSo, the number of red gumballs is 70. The answer is 70.",
+      "pred": "70",
+      "gt": "70",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 140,
+      "output": "好的，让我们一步步来解决这个问题。\n\n首先，我们知道总共有20辆车。其中：\n- 12辆是自动的，\n- 4辆是手动的，\n- 剩下的就是半自动的车。\n\n我们可以通过以下步骤计算半自动车辆的数量：\n1. 总车辆数 = 自动车辆数 + 手动车辆数 + 半自动车辆数\n2. 将已知数值代入公式：20 = 12 + 4 + 半自动车辆数\n3. 计算半自动车辆数：20 - 12 - 4 = 4\n\n所以，有4辆半自动的车。\n\n接下来，我们需要计算半自动车辆占总车辆的比例：\n1. 比例 = (半自动车辆数 / 总车辆数) * 100%\n2. 将数值代入公式：(4 / 20) * 100% = 0.2 * 100% = 20%\n\n因此，半自动车辆占总车辆的20%。\n\nThe answer is 20%.",
+      "pred": "20",
+      "gt": "20",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 141,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，设R为皇家蜂的数量。\n根据题目，婴儿蜂的数量是皇家蜂的两倍，所以婴儿蜂的数量为2R。\n再根据题目，工蜂的数量是婴儿蜂的两倍，因此工蜂的数量为2 * (2R) = 4R。\n\n题目还告诉我们总共有700只蜂，即：\nR + 2R + 4R = 700\n\n合并同类项得到：\n7R = 700\n\n解这个方程得到：\nR = 700 / 7\nR = 100\n\n既然R代表皇家蜂的数量，那么婴儿蜂的数量就是2R，也就是2 * 100 = 200。\n最后，工蜂的数量是婴儿蜂数量的两倍，即4R，也就是4 * 100 = 400。\n\n所以，工蜂的数量是400。\n\nThe answer is 400.",
+      "pred": "400",
+      "gt": "400",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 142,
+      "output": "Sure, let's break this down step by step:\n\n1. **Time Spent Gaming Daily**: Jordan spends 2 hours per day gaming.\n2. **Time Spent Gaming Weekly**: Since there are 7 days in a week, Jordan spends \\(2 \\text{ hours/day} \\times 7 \\text{ days/week} = 14 \\text{ hours/week}\\) gaming.\n3. **Time Available for Work Weekly**: If Jordan works full-time, he would typically work 40 hours a week. However, since he is working part-time and also spending time gaming, we need to calculate the effective working hours. He has 14 hours a week dedicated to gaming, so the remaining time available for work is \\(40 \\text{ hours/week} - 14 \\text{ hours/week} = 26 \\text{ hours/week}\\).\n4. **Earnings from Part-Time Job**: Jordan earns $10 per hour at his part-time job. Therefore, his weekly earnings from his part-time job would be \\(26 \\text{ hours/week} \\times \\$10/\\text{hour} = \\$260/\\text{week}\\).\n\nThe answer is 260.",
+      "pred": "260",
+      "gt": "140",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 143,
+      "output": "好的，让我们一步一步来计算：\n\n1. **确定非食品物品及其价格：**\n   - 3美元的灯泡\n   - 3美元的杯子\n   - 4美元的蟑螂捕捉器\n\n2. **计算这些非食品物品的总价格：**\n   - 灯泡 + 杯子 + 蟑螂捕捉器 = 3美元 + 3美元 + 4美元 = 10美元\n\n3. **计算10%的税费：**\n   - 10% 的 10美元 = 0.10 * 10美元 = 1美元\n\n4. **加上税费后的总价格：**\n   - 非食品物品的总价格 + 税费 = 10美元 + 1美元 = 11美元\n\n因此，约翰在所有非食品物品上的总花费是11美元。\n\nThe answer is 11.",
+      "pred": "11",
+      "gt": "16",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 144,
+      "output": "To calculate the profit Kim will make each week, we need to follow these steps:\n\n1. **Calculate the total number of customers**: Kim has 3 existing customers and is considering adding 5 more potential customers, making a total of \\(3 + 5 = 8\\) customers.\n\n2. **Calculate the total revenue per customer**: Each customer requires 2 bottles of bleach and one pack of laundry detergent. The cost for bleach is $2 per bottle and for laundry detergent is $5 per pack.\n   - Bleach cost per customer: \\(2 \\text{ bottles} \\times \\$2/\\text{bottle} = \\$4\\)\n   - Laundry detergent cost per customer: \\( \\$5/\\text{pack}\\)\n   - Total cost per customer: \\( \\$4 + \\$5 = \\$9\\)\n\n3. **Calculate the total revenue**: With 8 customers, the total revenue would be \\(8 \\text{ customers} \\times \\$9/\\text{customer} = \\$72\\).\n\nHowever, Kim expects to earn $92 in total revenue each week from her customers.\n\n4. **Calculate the total expenses**: The total expense calculation remains the same regardless of the number of customers since it’s based on the service provided to each customer.\n   - Total expense per week: \\( \\$9 \\text{ per customer} \\times 8 \\text{ customers} = \\$72\\)\n\n5. **Calculate the profit**: Profit is calculated as total revenue minus total expenses.\n   - Expected weekly profit: \\( \\$92 - \\$72 = \\$20\\)\n\nTherefore, Kim will make a profit of $20 each week.\n\nThe answer is 20.",
+      "pred": "20",
+      "gt": "20",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 145,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n1. **确定每公顷的产量**：每公顷可以收获100个无花果。\n2. **计算总公顷数**：约翰有10公顷的无花果树园。\n3. **计算一年内可以收获几次**：一年有4个季度，每个季度是3个月，所以约翰可以在一年内进行4次收获。\n4. **计算每次收获的数量**：每公顷可以收获100个无花果，因此在一次收获中，约翰可以从10公顷中收获 \\(10 \\times 100 = 1000\\) 个无花果。\n5. **计算一年内的总收获量**：由于约翰一年可以收获4次，所以他一年总共可以收获 \\(1000 \\times 4 = 4000\\) 个无花果。\n\n综上所述，约翰一年内可以收获4000个无花果。 \n\nThe answer is 4000.",
+      "pred": "4000",
+      "gt": "4000",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 146,
+      "output": "让我们逐步分析这个问题：\n\n1. 第一个盒子有500块。\n2. 第二个盒子的块数是第一个的3倍，即 \\(500 \\times 3 = 1500\\) 块。\n3. 第三个盒子的块数是第一个盒子块数的四分之一，即 \\(500 \\div 4 = 125\\) 块。\n\n现在我们将所有盒子中的块数加起来：\n\\[500 + 1500 + 125 = 2125\\]\n\n所以，如果约翰尼把所有的乐高都捡起来，他总共会捡起2125块。\n\nThe answer is 2125.",
+      "pred": "2125",
+      "gt": "2125",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 147,
+      "output": "让我们一步步分析这个问题。\n\n首先，前6个小时，有30只蜜蜂飞出蜂巢。\n那么，前6个小时后，共有30只蜜蜂飞出了蜂巢。\n\n接下来的6个小时，有1/2 * 30 = 15只蜜蜂飞回蜂巢。\n因此，在这12个小时结束时，蜂巢里有30 - 15 = 15只蜜蜂。\n\n然后，接下来的6个小时，飞出的蜜蜂数量是前一次的两倍，即2 * 15 = 30只蜜蜂飞出蜂巢。\n所以，在这18个小时结束时，蜂巢里有15 + 30 = 45只蜜蜂。\n\n最后，再过6个小时，那些之前飞出去但没有回来的蜜蜂会飞回蜂巢。在前18个小时中，有15只蜜蜂没有回来，所以这6个小时会有15只蜜蜂飞回蜂巢。\n因此，在这24个小时结束时，蜂巢里有45 - 15 + 15 = 45只蜜蜂。\n\n综上所述，在最后的6个小时内，黛拉看到45只蜜蜂飞回蜂巢。\n\nThe answer is 45.",
+      "pred": "45",
+      "gt": "75",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 148,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n1. **确定票价**：\n   - 每个成年人的票价是 $12。\n   - 每个儿童的票价是 $10。\n\n2. **计算总费用**：\n   - 假设Brittney和她的母亲一起前往，那么他们需要购买两张票。\n   - 其中一张是儿童票（Brittney），价格为 $10。\n   - 另一张是成人票（Brittney的母亲），价格为 $12。\n\n3. **计算总支付金额**：\n   - 总费用 = 儿童票的价格 + 成人票的价格\n   - 总费用 = $10 + $12 = $22\n\n4. **计算找回的金额**：\n   - 根据题目，Brittney的母亲最终收到了 $8 的找零。\n   - 这意味着Brittney的母亲实际上支付了 $22 - $8 = $14。\n\n因此，Brittney的母亲给了收银员 $14。\n\nThe answer is 14.",
+      "pred": "14",
+      "gt": "30",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 149,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道：\n- 查理有12个Facebook朋友。\n- 查理的朋友数量是多萝西的三倍。这意味着多萝西有的朋友数量为 \\(12 \\div 3 = 4\\)。\n- 詹姆斯的朋友数量是多萝西的四倍。因此，詹姆斯的朋友数量为 \\(4 \\times 4 = 16\\)。\n\n所以，詹姆斯在Facebook上有16个朋友。\n\nThe answer is 16.",
+      "pred": "16",
+      "gt": "16",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 150,
+      "output": "让我们逐步分析这个问题：\n\n1. **计算斯蒂夫到家所需时间：**\n   - 斯蒂夫距离学校3英里。\n   - 斯蒂夫骑自行车的速度是每分钟440英尺。\n   - 首先，将英里转换为英尺：3英里 = 3 * 5280英尺 = 15840英尺。\n   - 然后，计算时间：15840英尺 / 440英尺/分钟 = 36分钟。\n\n2. **计算蒂姆到家所需时间：**\n   - 蒂姆距离学校2英里。\n   - 蒂姆滑滑板的速度是每分钟264英尺。\n   - 同样，将英里转换为英尺：2英里 = 2 * 5280英尺 = 10560英尺。\n   - 计算时间：10560英尺 / 264英尺/分钟 = 40分钟。\n\n3. **比较两人到达时间：**\n   - 斯蒂夫需要36分钟。\n   - 蒂姆需要40分钟。\n\n因此，蒂姆会比斯蒂夫晚到家。我们需要计算出蒂姆比斯蒂夫多花的时间：\n- 时间差 = 蒂姆的时间 - 斯蒂夫的时间 = 40分钟 - 36分钟 = 4分钟。\n\n所以，答案是：**4**。",
+      "pred": "4",
+      "gt": "4",
+      "correct": true,
+      "format_ok": false
+    },
+    {
+      "id": 151,
+      "output": "让我们逐步分析这个问题：\n\n1. **确定每辆自行车的轮胎数量**：\n   - 两轮自行车（普通自行车）：2个轮胎\n   - 三轮自行车：3个轮胎\n   - 三轮摩托车（Unisicycle）：1个轮胎\n\n2. **计算每种类型的车辆需要充气的轮胎数量**：\n   - 5位乘客乘坐普通自行车，每辆普通自行车有2个轮胎，所以总共需要充气的轮胎数量是 \\(5 \\times 2 = 10\\) 个。\n   - 3位乘客乘坐三轮自行车，每辆三轮自行车有3个轮胎，所以总共需要充气的轮胎数量是 \\(3 \\times 3 = 9\\) 个。\n   - 1位乘客乘坐三轮摩托车，有1个轮胎。\n\n3. **计算总的轮胎充气次数**：\n   - 总共需要充气的轮胎数量是 \\(10 + 9 + 1 = 20\\) 个。\n\n4. **计算费用**：\n   - 每个轮胎充气的费用是25美分，即0.25美元。\n   - 因此，总共的费用是 \\(20 \\times 0.25 = 5\\) 美元。\n\n综上所述，Shonda 在这一天总共赚了5美元。但是题目问的是她赚了多少钱，实际上是在问她损失了多少美元，因为她是提供服务的人，而不是消费者。因此，她实际上没有赚到钱，而是为这些服务支付了费用。\n\nThe answer is 0.",
+      "pred": "0",
+      "gt": "5",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 152,
+      "output": "好的，让我们一步步来解决这个问题。\n\n首先，计算卡尔购买的饼干总数：\n- 卡尔买了10包饼干。\n- 每包有6块饼干。\n因此，总共的饼干数量是 \\(10 \\times 6 = 60\\) 块饼干。\n\n接下来，计算所有饼干的总成本：\n- 每块饼干的成本是$0.10。\n因此，所有饼干的总成本是 \\(60 \\times 0.10 = 6\\) 美元。\n\n最后，计算卡尔收到的找零：\n- 卡尔用一张$10的钞票支付。\n- 总成本是$6。\n因此，找零金额是 \\(10 - 6 = 4\\) 美元。\n\n所以，卡尔会收到$4的找零。\n\nThe answer is 4.",
+      "pred": "4",
+      "gt": "4",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 153,
+      "output": "让我们一步步来分析这个问题：\n\n1. **初始情况**：假设最初包装里有X个法式炸薯条。\n\n2. **被吃掉的情况**：\n   - 一开始，塞格尔吃了14个。\n   - 塞格尔走后，剩下的法式炸薯条的一半被一只猫吃掉了。这意味着剩下的是原来的一半，即\\( \\frac{X}{2} \\)。\n   \n3. **被鸟儿吃掉的情况**：\n   - 三只鸟儿每只吃了3个，总共吃了\\( 3 \\times 3 = 9 \\)个。\n   - 这之后剩下的是 \\( \\frac{X}{2} - 9 \\)。\n\n4. **被松鼠吃掉的情况**：\n   - 松鼠吃了剩余的三分之二，意味着剩下的是剩余的三分之一，即 \\( \\left(\\frac{X}{2} - 9\\right) \\times \\frac{1}{3} \\)。\n\n5. **最后被吃掉和留下的情况**：\n   - 最后一个吃掉的法式炸薯条被一个章鱼吃掉，还剩下5个。\n   - 这意味着在被章鱼吃之前，剩下的是5个加上被松鼠吃掉的那个，即 \\( \\left(\\frac{X}{2} - 9\\right) \\times \\frac{1}{3} = 5 + 1 = 6 \\)。\n\n现在我们有了方程：\n\\[ \\left(\\frac{X}{2} - 9\\right) \\times \\frac{1}{3} = 6 \\]\n\n解这个方程：\n\\[ \\frac{X}{2} - 9 = 18 \\]\n\\[ \\frac{X}{2} = 27 \\]\n\\[ X = 54 \\]\n\n所以，最初包装里有54个法式炸薯条。\n\nThe answer is 54.",
+      "pred": "54",
+      "gt": "48",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 154,
+      "output": "To calculate the total number of hours spent in chemotherapy classes over one semester, we need to break down the schedule and then sum up the hours.\n\n1. **Sundays, Wednesdays, and Fridays**: \n   - Each day has three 1-hour classes.\n   - Total hours per day = 3 * 1 hour = 3 hours.\n   - There are 3 days per week with classes on these days.\n   - Total hours per week = 3 hours/day * 3 days/week = 9 hours/week.\n\n2. **Mondays and Thursdays**:\n   - Each day has two 2-hour classes.\n   - Total hours per day = 2 * 2 hours = 4 hours.\n   - There are 2 days per week with classes on these days.\n   - Total hours per week = 4 hours/day * 2 days/week = 8 hours/week.\n\n3. **Total weekly hours**:\n   - Adding the hours from both sets of days gives us the total weekly hours.\n   - Total weekly hours = 9 hours (from Sundays, Wednesdays, and Fridays) + 8 hours (from Mondays and Thursdays) = 17 hours/week.\n\n4. **Total semester hours**:\n   - There are 16 weeks in the semester.\n   - Total semester hours = 17 hours/week * 16 weeks = 272 hours.\n\nThe answer is 272.",
+      "pred": "272",
+      "gt": "272",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 155,
+      "output": "To solve this problem, we need to calculate the total length of all the items Bill bakes in inches and then convert that total length into feet.\n\nStep 1: Calculate the total length for each type of baked good.\n- Rolls: Each roll is 4 inches long, and Bill bakes 300 rolls.\n  Total length for rolls = 300 rolls * 4 inches/roll = 1200 inches\n\n- Croissants: Each croissant is 6 inches long, and Bill bakes 120 croissants.\n  Total length for croissants = 120 croissants * 6 inches/croissant = 720 inches\n\n- Baguettes: Each baguette is 2 feet long (which is 24 inches), and Bill bakes 60 baguettes.\n  Total length for baguettes = 60 baguettes * 24 inches/baguette = 1440 inches\n\nStep 2: Add up the total lengths for all types of baked goods.\nTotal length = Length of rolls + Length of croissants + Length of baguettes\nTotal length = 1200 inches + 720 inches + 1440 inches = 3360 inches\n\nStep 3: Convert the total length from inches to feet.\nSince 1 foot equals 12 inches, we divide the total length in inches by 12 to get the length in feet.\nTotal length in feet = 3360 inches / 12 inches/foot = 280 feet\n\nThe answer is 280.",
+      "pred": "280",
+      "gt": "280",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 156,
+      "output": "好的，让我们一步一步来计算：\n\n1. **每种动物每月的需要量：**\n   - 猴子：200个\n   - 大猩猩：400个\n   - 狸猴：100个\n\n2. **每种动物两个月的需要量：**\n   - 猴子：\\(200 \\times 2 = 400\\)个\n   - 大猩猩：\\(400 \\times 2 = 800\\)个\n   - 狸猴：\\(100 \\times 2 = 200\\)个\n\n3. **两个月总共需要的量：**\n   - 总共需要的量为猴子、大猩猩和狸猴两个月的总和。\n   - \\(400 + 800 + 200 = 1400\\)个\n\n因此，为了满足两个月的需求，他需要订购1400个椰子。\n\nThe answer is 1400.",
+      "pred": "1400",
+      "gt": "1400",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 157,
+      "output": "让我们逐步分析这个问题：\n\n1. **计算布莱克跑的距离**：\n   - 布莱克跑了15次，每次跑100码。\n   - 因此，布莱克总共跑的距离是 \\(15 \\times 100 = 1500\\) 码。\n\n2. **计算凯莉跑的距离**：\n   - 凯莉第一次跑100码。\n   - 然后她跑了34次，每次跑40码再返回40码，即每次往返共跑80码。\n   - 因此，凯莉跑的总距离是 \\(100 + 34 \\times 80 = 100 + 2720 = 2820\\) 码。\n\n3. **比较两者的距离**：\n   - 布莱克跑了1500码。\n   - 凯莉跑了2820码。\n   - 凯莉比布莱克多跑的距离是 \\(2820 - 1500 = 1320\\) 码。\n\n因此，凯莉比布莱克多跑的距离是1320码。答案是：1320。",
+      "pred": "1320",
+      "gt": "80",
+      "correct": false,
+      "format_ok": false
+    },
+    {
+      "id": 158,
+      "output": "Sure, let's break it down step by step:\n\n1. **Pens**: \n   - Number of pens = 4\n   - Cost per pen = $1.5\n   - Total cost for pens = 4 * $1.5 = $6\n\n2. **Notebooks**: \n   - Number of notebooks = 2\n   - Cost per notebook = $4\n   - Total cost for notebooks = 2 * $4 = $8\n\n3. **Bond Paper**:\n   - Number of bond paper rim = 1\n   - Cost per bond paper rim = $20\n   - Total cost for bond paper = 1 * $20 = $20\n\nNow, adding all these costs together to find the total amount spent:\n\n- Total cost = Cost of pens + Cost of notebooks + Cost of bond paper\n- Total cost = $6 + $8 + $20 = $24\n\nThe answer is 24.",
+      "pred": "24",
+      "gt": "34",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 159,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n1. 首先，我们知道最初在芬的视线中有11只蝌蚪。\n2. 然后，有6只蝌蚪从一朵水生植物下出来了。这意味着这6只蝌蚪现在不在水生植物下，但它们仍然是在水中的。\n3. 接着，又有2只蝌蚪从一块石头下出来了。这意味着这2只蝌蚪现在也不在石头下，但同样，它们仍然在水中。\n\n因此，无论这些蝌蚪在什么下面，只要它们还在水中，芬就能看到它们。所以，我们只需要计算总的蝌蚪数量，而不必考虑它们具体在哪里。\n\n所以，总共有11只蝌蚪。\n\nThe answer is 11.",
+      "pred": "11",
+      "gt": "15",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 160,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道：\n- 星期一的时候，水的深度是17英尺。\n- 星期二的时候，水比星期一多了7英尺。\n- 星期三的时候，水的深度是星期二的深度的两倍。\n\n我们先计算星期二的水深：\n星期二的水深 = 星期一的水深 + 7英尺\n星期二的水深 = 17英尺 + 7英尺\n星期二的水深 = 24英尺\n\n然后，我们计算星期三的水深：\n星期三的水深 = 星期二的水深 × 2\n星期三的水深 = 24英尺 × 2\n星期三的水深 = 48英尺\n\n所以，星期三的时候，水的深度是48英尺。\n\nThe answer is 48.",
+      "pred": "48",
+      "gt": "16",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 161,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们确定艾纳金捕获的鱼的数量：\n- 艾纳金捕获了10只星鱼。\n- 艾纳金捕获了6匹赛马鱼。\n- 艾纳金捕获了3条云鱼。\n\n接下来，我们根据题目中的信息计算洛克辛捕获的鱼的数量：\n- 洛克辛比艾纳金少捕获5只星鱼，所以洛克辛捕获了 \\(10 - 5 = 5\\) 只星鱼。\n- 洛克辛比艾纳金少捕获3匹赛马鱼，所以洛克辛捕获了 \\(6 - 3 = 3\\) 匹赛马鱼。\n- 洛克辛比艾纳金多捕获2条云鱼，所以洛克辛捕获了 \\(3 + 2 = 5\\) 条云鱼。\n\n现在，我们可以计算他们一共捕获了多少条鱼：\n- 星鱼总数：\\(10 + 5 = 15\\) 只。\n- 赛马鱼总数：\\(6 + 3 = 9\\) 匹。\n- 云鱼总数：\\(3 + 5 = 8\\) 条。\n\n最后，我们将所有类型的鱼加起来得到总数：\n\\(15 + 9 + 8 = 32\\)。\n\n因此，他们一共捕获了32条鱼。The answer is 32。",
+      "pred": "32",
+      "gt": "32",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 162,
+      "output": "让我们一步步来分析这个问题。\n\n1. **初始价格**：每包坚果的初始价格是$20。\n2. **增长模式**：每两个月价格增加初始价格的20%，即每次增加$20 * 20% = $4。\n3. **时间跨度**：我们需要计算36个月后的价格。\n4. **计算周期数**：36个月等于 \\(36 \\div 2 = 18\\) 个周期（每两个月一个周期）。\n5. **总增长额**：每个周期增长$4，所以18个周期的增长总额为 \\(18 \\times 4 = 72\\) 美元。\n6. **最终价格**：初始价格加上总增长额，即 \\(20 + 72 = 92\\) 美元。\n\n因此，36个月后每包坚果的价格将是$92。 \n\nThe answer is 92.",
+      "pred": "92",
+      "gt": "92",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 163,
+      "output": "好的，让我们一步步来计算所有玩具的总价值。\n\n1. **计算每种玩具的数量及其单价：**\n   - 红色汽车有5个，每个价值$4。\n   - 动作人偶有3个，每个价值$5。\n   - 风车（风笛）有1个，其价值等于3个动作人偶的价值，即 \\(3 \\times 5 = 15\\) 元。\n\n2. **计算红色汽车的总价值：**\n   - \\(5 \\text{辆} \\times \\$4/\\text{辆} = \\$20\\)。\n\n3. **计算动作人偶的总价值：**\n   - \\(3 \\text{个} \\times \\$5/\\text{个} = \\$15\\)。\n\n4. **计算风车的总价值：**\n   - 风车的价值为 \\(3 \\times 5 = \\$15\\)。\n\n5. **计算所有玩具的总价值：**\n   - \\( \\$20 + \\$15 + \\$15 = \\$50\\)。\n\n因此，所有玩具的总价值是$50。\n\nThe answer is 50.",
+      "pred": "50",
+      "gt": "50",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 164,
+      "output": "让我们逐步分析这个问题：\n\n1. **如果自己报税：**\n   - 自己报税会节省3小时的自由职业工作时间。\n   - 每小时自由职业工作可以赚$35。\n   - 因此，自己报税会损失的时间价值是 \\(3 \\text{小时} \\times \\$35/\\text{小时} = \\$105\\)。\n\n2. **请会计师报税：**\n   - 需要支付给会计师$90作为费用。\n\n3. **比较两种情况下的净收益：**\n   - 自己报税的净损失为$105。\n   - 请会计师报税的费用为$90。\n\n4. **计算差额：**\n   - \\( \\$105 - \\$90 = \\$15 \\)。\n\n因此，如果选择请会计师报税，她将比自己报税多出$15。\n\nThe answer is 15.",
+      "pred": "15",
+      "gt": "15",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 165,
+      "output": "让我们一步步来计算：\n\n1. 首先，Elvira选择的电脑的价格是 €1090。\n2. 然后她又买了以下配件：\n   - 扫描仪：€157\n   - CD刻录机：€74\n   - 打印机：€102\n\n我们需要将这些配件的总价加起来，然后从她的总预算中减去这个总价。\n\n配件总价 = €157 + €74 + €102 = €333\n\n现在我们用她的总预算减去配件的总价：\n\n剩余预算 = 总预算 - 配件总价\n剩余预算 = €1500 - €333 = €1167\n\n所以，Elvira在购买配件后，还剩下 €1167 来买衣服。\n\nThe answer is 1167.",
+      "pred": "1167",
+      "gt": "77",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 166,
+      "output": "To solve this problem, let's break it down into steps:\n\n1. **Determine the total number of eggs needed for 15 Spanish flans:**\n   - Each Spanish flan requires 3 eggs.\n   - Therefore, for 15 Spanish flans, the total number of eggs required is \\(15 \\times 3 = 45\\) eggs.\n\n2. **Calculate how many times Sandra needs to babysit to get enough eggs:**\n   - Each time Sandra babysits, she gets 9 eggs.\n   - To find out how many times she needs to babysit to get 45 eggs, we divide the total number of eggs needed by the number of eggs per babysitting session: \\(45 \\div 9 = 5\\).\n\nTherefore, Sandra needs to babysit 5 times to get enough eggs to make 15 Spanish flans.\n\nThe answer is 5.",
+      "pred": "5",
+      "gt": "5",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 167,
+      "output": "Let's denote the current age of Brook as \\( B \\) and the current age of Seth as \\( S \\).\n\nFrom the problem, we know two things:\n1. Seth's age is twice Brook's age.\n\\[ S = 2B \\]\n\n2. In 2 years, the sum of their ages will be 28.\n\\[ (B + 2) + (S + 2) = 28 \\]\n\nWe can simplify the second equation to:\n\\[ B + S + 4 = 28 \\]\n\\[ B + S = 24 \\]\n\nNow, we substitute the value of \\( S \\) from the first equation into the second equation:\n\\[ B + 2B = 24 \\]\n\\[ 3B = 24 \\]\n\\[ B = 8 \\]\n\nSo, Brook's current age is 8 years. Since Seth's age is twice Brook's age:\n\\[ S = 2B = 2 \\times 8 = 16 \\]\n\nTherefore, Seth's current age is 16 years.\n\nThe answer is 16.",
+      "pred": "16",
+      "gt": "16",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 168,
+      "output": "Sure, let's break this down step by step.\n\n1. We know that Athel has $8.\n2. Jim has twice the amount of money Athel has plus $2 more.\n3. So, first we calculate twice the amount Athel has: \\(2 \\times 8 = 16\\).\n4. Then we add $2 to this amount: \\(16 + 2 = 18\\).\n\nTherefore, Jim has $18.\n\nThe answer is 18.",
+      "pred": "18",
+      "gt": "18",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 169,
+      "output": "Sure, let's break it down step by step:\n\n1. **Weekdays**: There are 5 weekdays in a week.\n   - On each weekday, the pongo (assuming this is a made-up term for an animal like a horse) walks 20 miles.\n   - So, for 5 weekdays, the total distance covered is \\(5 \\times 20 = 100\\) miles.\n\n2. **Weekends**: There are 2 weekend days in a week.\n   - On each weekend day, the pongo walks 10 miles.\n   - So, for 2 weekend days, the total distance covered is \\(2 \\times 10 = 20\\) miles.\n\n3. **Total Distance**: To find the total distance covered in one week, we add the distances from weekdays and weekends.\n   - Total distance = Distance on weekdays + Distance on weekends\n   - Total distance = 100 miles + 20 miles = 120 miles.\n\nThe answer is 120.",
+      "pred": "120",
+      "gt": "120",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 170,
+      "output": "好的，让我们一步一步来计算每件制服的总成本。\n\n1. **顶的价格**：题目中提到每个顶的价格是$25。\n   \n2. **夹克的价格**：夹克的价格是顶的价格的三倍。因此，夹克的价格为 \\(25 \\times 3 = 75\\) 美元。\n\n3. **裤子的价格**：裤子的价格是顶和夹克价格的平均值。顶的价格是$25，夹克的价格是$75，所以平均价格是 \\((25 + 75) / 2 = 50\\) 美元。\n\n现在我们知道了每件制服的各个部分的价格：\n- 顶：$25\n- 夹克：$75\n- 裤子：$50\n\n每件制服的总成本就是这些价格的总和：\n\\[ 25 + 75 + 50 = 150 \\]\n\n所以，每件制服的总成本是$150。\n\nThe answer is 150.",
+      "pred": "150",
+      "gt": "150",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 171,
+      "output": "好的，让我们一步一步来计算：\n\n1. **8腿生物的数量和腿的数量**：\n   - 每种8腿生物有8条腿。\n   - 有80只这样的生物。\n   - 因此，这些生物的总腿数是 \\(8 \\times 80 = 640\\) 条腿。\n\n2. **6腿生物的数量和腿的数量**：\n   - 每种6腿生物有6条腿。\n   - 有90只这样的生物。\n   - 因此，这些生物的总腿数是 \\(6 \\times 90 = 540\\) 条腿。\n\n3. **10腿生物的数量和腿的数量**：\n   - 每种10腿生物有10条腿。\n   - 有3只这样的生物。\n   - 因此，这些生物的总腿数是 \\(10 \\times 3 = 30\\) 条腿。\n\n最后，将所有腿的数量加起来：\n\\[640 + 540 + 30 = 1210\\]\n\n所以，杰克总共看到的腿的数量是1210条。\n\nThe answer is 1210.",
+      "pred": "1210",
+      "gt": "1210",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 172,
+      "output": "让我们一步步来分析这个问题：\n\n1. **确定已知信息：**\n   - 桑迪三十岁时，格雷尼红比桑迪小三岁。\n   - 格雷尼红的年龄是桑迪四岁的两倍。\n   - 桑迪的年龄与桑迪三十岁相同，即桑迪的年龄是30岁。\n\n2. **计算各鸟的年龄：**\n   - 桑迪的年龄是30岁。\n   - 根据题目，格雷尼红的年龄是桑迪四岁的两倍。因此，当桑迪是4岁时，格雷尼红是 \\(4 \\times 2 = 8\\) 岁。\n   - 根据题目，桑迪三十岁时，格雷尼红比桑迪小三岁。所以，当桑迪是30岁时，格雷尼红是 \\(30 - 3 = 27\\) 岁。\n   - 现在我们有两个关于格雷尼红年龄的信息，需要验证它们是否一致：\n     - 根据格雷尼红是桑迪四岁时的两倍年龄，当桑迪是4岁时，格雷尼红是8岁。\n     - 当桑迪是30岁时，格雷尼红应该是 \\(30 - 3 = 27\\) 岁。\n   - 这两个信息不一致，因此我们需要重新考虑问题中的逻辑关系。\n\n3. **重新考虑逻辑关系：**\n   - 根据题目，格雷尼红比桑迪小三岁，且格雷尼红是桑迪四岁时的两倍年龄。\n   - 设桑迪的年龄为 \\(x\\)，格雷尼红的年龄为 \\(y\\)。\n   - 根据题目，当桑迪是30岁时，格雷尼红是 \\(30 - 3 = 27\\) 岁。\n   - 根据题目，格雷尼红是桑迪四岁时的两倍年龄，即 \\(y = 2(x - 4)\\)。\n   - 将 \\(x = 30\\) 代入上述方程，得到 \\(y = 2(30 - 4) = 2 \\times 26 = 52\\)。\n\n4. **计算所有鸟的总年龄：**\n   - 桑迪：30岁\n   - 格雷",
+      "pred": "30",
+      "gt": "51",
+      "correct": false,
+      "format_ok": false
+    },
+    {
+      "id": 173,
+      "output": "让我们一步步来计算：\n\n1. **计算每个月的最低还款总额：**\n   - 月最低学生贷款还款额：$300\n   - 月最低信用卡还款额：$200\n   - 月最低抵押贷款还款额：$500\n\n   因此，每月最低还款总额为：\n   \\[\n   300 + 200 + 500 = 1000 \\text{美元}\n   \\]\n\n2. **计算每月增加50%后的还款额：**\n   每月增加50%，即：\n   \\[\n   1000 \\times (1 + 0.5) = 1000 \\times 1.5 = 1500 \\text{美元}\n   \\]\n\n3. **计算一年内的总还款额：**\n   一年有12个月，因此一年内的总还款额为：\n   \\[\n   1500 \\times 12 = 18000 \\text{美元}\n   \\]\n\n所以，杰西卡一年内需要支付的总还款额是18000美元。\n\nThe answer is 18000.",
+      "pred": "18000",
+      "gt": "18000",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 174,
+      "output": "To calculate the total time Bill will take to prepare 60 potatoes for the barbecue, we need to break down the process into two parts: peeling and cutting.\n\n1. **Peeling Time Calculation:**\n   - Bill needs to peel 60 potatoes.\n   - It takes him approximately 30 seconds (or half a minute) to peel each potato.\n   - Therefore, the total time spent peeling all 60 potatoes would be \\(60 \\times 30\\) seconds.\n\n\\[60 \\times 30 = 1800 \\text{ seconds}\\]\n\n2. **Cutting Time Calculation:**\n   - Bill needs to cut 60 potatoes.\n   - It takes him only 5 seconds to cut each potato.\n   - Therefore, the total time spent cutting all 60 potatoes would be \\(60 \\times 5\\) seconds.\n\n\\[60 \\times 5 = 300 \\text{ seconds}\\]\n\n3. **Total Time Calculation:**\n   - To find the total time Bill spends preparing the potatoes, we add the time spent peeling and cutting together.\n\n\\[1800 \\text{ seconds} + 300 \\text{ seconds} = 2100 \\text{ seconds}\\]\n\nSince there are 60 seconds in a minute, we can convert the total time from seconds to minutes:\n\n\\[2100 \\text{ seconds} ÷ 60 = 35 \\text{ minutes}\\]\n\nTherefore, the answer is 35 minutes.",
+      "pred": "35",
+      "gt": "95",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 175,
+      "output": "To solve this problem, let's break it down into steps:\n\n1. **Determine the total revenue**: We know they made a profit of $25. Since their profit is the total revenue minus the total cost, we can express this as:\n   \\[\n   \\text{Total Revenue} = \\text{Total Cost} + \\$25\n   \\]\n\n2. **Calculate the total revenue**: They sell each glass for $0.50 and get 20 glasses per gallon. So, if \\( x \\) is the number of gallons sold, then the total revenue is:\n   \\[\n   \\text{Total Revenue} = 20x \\times \\$0.50 = \\$10x\n   \\]\n\n3. **Express the total cost**: For each gallon, the cost is $3 for the lime juice and $2 for the chia seeds, so the total cost per gallon is $5. Therefore, the total cost for \\( x \\) gallons is:\n   \\[\n   \\text{Total Cost} = 5x\n   \\]\n\n4. **Set up the equation for profit**: Using the information that their profit is $25, we can set up the following equation:\n   \\[\n   10x = 5x + 25\n   \\]\n\n5. **Solve for \\( x \\)**:\n   \\[\n   10x - 5x = 25 \\\\\n   5x = 25 \\\\\n   x = 5\n   \\]\n   So, they sold 5 gallons.\n\n6. **Calculate the total cost**: Now that we know they sold 5 gallons, we can calculate the total cost:\n   \\[\n   \\text{Total Cost} = 5 \\times 5 = \\$25\n   \\]\n\nThe answer is 25.",
+      "pred": "25",
+      "gt": "15",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 176,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n首先，我们知道总共有240名亚洲运动员参加比赛。\n其次，其中80名是日本人。\n这意味着剩下的运动员数量为：240 - 80 = 160 名。\n这些剩下的160名运动员都是中国人。\n\n题目还告诉我们，中国队伍中的男生有60人。因此，剩下的运动员就是女生。\n所以，中国队伍中的女生数量为：160 - 60 = 100 名。\n\n因此，中国队伍中有100名女生。\n\nThe answer is 100.",
+      "pred": "100",
+      "gt": "100",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 177,
+      "output": "让我们一步步来计算：\n\n1. **计算租金**：Zaid 将其收入的 1/4 用于租金。\n   - 租金 = \\( \\frac{1}{4} \\times 6000 = 1500 \\) 美元\n\n2. **计算汽车燃料费用**：他将收入的 1/3 用于汽车燃料。\n   - 汽车燃料费用 = \\( \\frac{1}{3} \\times 6000 = 2000 \\) 美元\n\n3. **计算剩余金额的一半用于慈善**：\n   - 剩余金额 = 总收入 - 租金 - 汽车燃料费用\n   - 剩余金额 = \\( 6000 - 1500 - 2000 = 2500 \\) 美元\n   - 慈善捐款 = \\( \\frac{1}{2} \\times 2500 = 1250 \\) 美元\n\n4. **计算给女儿和妻子的花费**：\n   - 给女儿的花费 = $200 美元\n   - 给妻子的花费 = $700 美元\n   - 总共 = $200 + $700 = $900 美元\n\n5. **计算剩余金额**：\n   - 剩余金额 = 剩余金额 - 慈善捐款 - 给女儿的钱 - 给妻子的钱\n   - 剩余金额 = \\( 2500 - 1250 - 200 - 700 = 350 \\) 美元\n\n因此，Zaid 在所有这些开销和捐赠之后，还剩下 350 美元。\n\nThe answer is 350.",
+      "pred": "350",
+      "gt": "350",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 178,
+      "output": "好的，我们一步步来分析这个问题。\n\n1. **首先，我们知道Bo有40个蛋糕。**\n2. **Monika比Bo少4个蛋糕，所以Monika有的蛋糕数量是：**\n   \\[\n   40 - 4 = 36 \\text{个蛋糕}\n   \\]\n3. **Rani比Monika多10个蛋糕，所以Rani有的蛋糕数量是：**\n   \\[\n   36 + 10 = 46 \\text{个蛋糕}\n   \\]\n\n现在，我们把三个人的蛋糕数量加起来：\n\\[\n40 + 36 + 46 = 122 \\text{个蛋糕}\n\\]\n\nThe answer is 122.",
+      "pred": "122",
+      "gt": "122",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 179,
+      "output": "Sure, let's break this down step by step:\n\n1. **Determine the earnings per hour:** Lloyd earns $10 per hour.\n2. **Calculate the earnings for the first week:** Lloyd read for 5 hours in the first week. So, his earnings for the first week would be \\(5 \\text{ hours} \\times \\$10/\\text{hour} = \\$50\\).\n3. **Calculate the earnings for the second week:** Lloyd read for 8 hours in the second week. So, his earnings for the second week would be \\(8 \\text{ hours} \\times \\$10/\\text{hour} = \\$80\\).\n4. **Calculate the total earnings over the two weeks:** To find the total earnings, we add the earnings from both weeks together. So, the total earnings would be \\(\\$50 + \\$80 = \\$130\\).\n\nThe answer is 130.",
+      "pred": "130",
+      "gt": "130",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 180,
+      "output": "好的，我们来一步步分析这个问题。\n\n1. **确定获胜者获得的票数比例**：题目中提到获胜者获得了 \\(\\frac{3}{4}\\) 的票数。\n2. **计算获胜者的票数**：班级总共有80名学生参与投票，因此获胜者获得的票数为 \\(80 \\times \\frac{3}{4} = 60\\) 票。\n3. **计算失败者的票数**：既然总票数是80票，而获胜者得到了60票，那么失败者得到的票数就是 \\(80 - 60 = 20\\) 票。\n\n所以，失败者得到的票数是20票。 \n\nThe answer is 20.",
+      "pred": "20",
+      "gt": "20",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 181,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n首先，我们知道：\n- 沙德拉（Sandria）订购了四倍于白色康乃馨的红色玫瑰。\n- 她订购了200朵黑色百合，数量是白色康乃馨的五倍。\n\n从这里我们可以得出：\n- 设白色康乃馨的数量为x，则红色玫瑰的数量为4x。\n- 白色康乃馨的数量x等于200除以5，即x = 200 / 5 = 40。\n- 因此，红色玫瑰的数量为4x = 4 * 40 = 160。\n\n所以，沙德拉总共订购了160朵红色玫瑰。为了保证她的生意不受影响，弗雷德必须在晚上5点之前将这160朵红色玫瑰送到她那里。\n\nThe answer is 160.",
+      "pred": "160",
+      "gt": "160",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 182,
+      "output": "让我们逐步分析这个问题：\n\n1. 首先，我们知道现在 Jain 的年龄是 30 岁。\n2. 根据题目，两年前 Mark 比 Jain 小 5 岁。这意味着两年前 Mark 的年龄是：\\(30 - 5 = 25\\) 岁。\n3. 因此，现在 Mark 的年龄是：\\(25 + 2 = 27\\) 岁。\n4. 最后，题目说 Gene 比 Mark 大 2 年，所以 Gene 现在的年龄是：\\(27 + 2 = 29\\) 岁。\n\nThe answer is 29.",
+      "pred": "29",
+      "gt": "23",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 183,
+      "output": "让我们逐步分析这个问题。\n\n首先，我们计算两个团队的总时间。\n\n对于第一个团队（非常平衡的团队）：\n每个成员跑完400米需要55秒。\n因此，整个团队完成4圈（即1600米）的时间是 \\(55 \\times 4 = 220\\) 秒。\n\n对于第二个团队（不太平衡的团队）：\n- 第一个成员用时60秒。\n- 第二个成员比第一个快3秒，即用时 \\(60 - 3 = 57\\) 秒。\n- 第三个成员比第二个快3秒，即用时 \\(57 - 3 = 54\\) 秒。\n- 第四个成员比第三个快3秒，即用时 \\(54 - 3 = 51\\) 秒。\n\n因此，整个团队完成4圈的时间是 \\(60 + 57 + 54 + 51 = 222\\) 秒。\n\n现在我们可以比较两个团队的时间：\n- 平衡团队用时：220秒\n- 不平衡团队用时：222秒\n\n不平衡团队比平衡团队多用了2秒。\n\nThe answer is 2.",
+      "pred": "2",
+      "gt": "2",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 184,
+      "output": "To solve this problem, let's break it down into steps:\n\n1. **Determine the probability of rolling a number greater than 3 on a six-sided die:**\n   - A six-sided die has the numbers 1 through 6.\n   - Numbers greater than 3 are 4, 5, and 6.\n   - There are 3 favorable outcomes out of 6 possible outcomes.\n   - Probability = \\( \\frac{3}{6} = \\frac{1}{2} \\) or 50%.\n\n2. **Determine the probability of rolling two even numbers in succession:**\n   - Even numbers on a six-sided die are 2, 4, and 6.\n   - There are 3 even numbers out of 6 possible outcomes.\n   - The probability of rolling an even number once is \\( \\frac{3}{6} = \\frac{1}{2} \\).\n   - Since the rolls are independent events, the probability of rolling two even numbers in succession is \\( \\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4} \\) or 25%.\n\n3. **Calculate how much greater the probability of rolling a number greater than 3 is compared to rolling two even numbers in succession:**\n   - Probability of rolling a number greater than 3 = 50% or 0.5.\n   - Probability of rolling two even numbers in succession = 25% or 0.25.\n   - Difference = 0.5 - 0.25 = 0.25 or 25%.\n\nThe answer is 25.",
+      "pred": "25",
+      "gt": "25",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 185,
+      "output": "Sure, let's break this down step by step:\n\n1. **Information Given**: \n   - Jena's mother has 20 apples.\n   - Jena took half of the apples from her mother.\n\n2. **Calculating the Number of Apples Jena Took**:\n   - Since Jena took half of the 20 apples, we calculate \\( \\frac{1}{2} \\times 20 = 10 \\) apples.\n\n3. **Total Number of Apples Taken**:\n   - Jena took 10 apples.\n   - Her mother also took some apples (which is the remaining half that Jena didn't take).\n   - Therefore, her mother took the other half, which is also 10 apples.\n\n4. **Summing Up**:\n   - Total number of apples taken by both Jena and her mother = Jena's apples + Mother's apples.\n   - Total = 10 (Jena's apples) + 10 (Mother's apples) = 20 apples.\n\nThe answer is 20.",
+      "pred": "20",
+      "gt": "30",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 186,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道每只老鼠被分成了6块肉，而总的肉块数量是160块。因此，我们可以先计算出总共有多少只老鼠：\n\\[ \\text{总老鼠数} = \\frac{\\text{总肉块数}}{\\text{每只老鼠的肉块数}} = \\frac{160}{6} \\]\n\n但是，这里需要注意的是，160不能被6整除，这意味着直接用这个方法可能不完全准确。实际上，题目中提到的是“3个夹子中的相同群体”，意味着这些老鼠是按照某种方式分组的，而不是每个单独计算。\n\n接下来，我们考虑实际分配的情况：\n- 每个夹子有3只老鼠。\n- 总共需要计算的是每个夹子中有多少只老鼠。\n\n由于总共有160块肉，每只老鼠被分成6块，那么实际上每只老鼠对应的是 \\(\\frac{1}{6}\\) 块肉。因此，每块肉代表一个完整的老鼠。\n\n现在，我们重新计算：\n\\[ \\text{总老鼠数} = \\frac{160}{\\frac{1}{6}} = 160 \\times 6 = 960 \\]\n\n但这是基于每只老鼠平均分配的情况，实际上我们需要找到每夹子中的老鼠数。既然每夹子有3只老鼠，那么：\n\\[ \\text{每夹子的老鼠数} = \\frac{\\text{总老鼠数}}{\\text{夹子数}} \\]\n\n题目中没有明确给出夹子的数量，但我们知道每夹子有3只老鼠，且总共分配了160块肉。因此，我们可以通过每夹子的肉块数来反推每夹子中的老鼠数。每夹子分配的肉块数为：\n\\[ \\text{每夹子的肉块数} = \\frac{160}{\\text{夹子数}} \\]\n\n由于每夹子有3只老鼠，每只老鼠6块肉，那么每夹子的肉块数应该是每只老鼠的肉块数乘以老鼠数再除以每夹子的老鼠数：\n\\[ \\text{每夹子的肉块数} = \\frac{160}{\\text{夹子数}} = \\frac{3 \\times 6}{3} = 6 \\]\n\n所以，",
+      "pred": "6",
+      "gt": "5",
+      "correct": false,
+      "format_ok": false
+    },
+    {
+      "id": 187,
+      "output": "To calculate the amount Mandy needs to pay Benedict after 3 months including the monthly interest, we can follow these steps:\n\n1. **Calculate the monthly interest**: Since the annual interest rate is not given and only the monthly interest rate is provided (2%), we use this directly.\n   \n   Monthly interest = Principal × Rate × Time\n   \n   Here, the principal is $100, the rate is 2% per month, and the time is 3 months.\n\n2. **Calculate the total interest over 3 months**:\n   \n   Total Interest = Principal × Monthly Interest Rate × Number of Months\n   Total Interest = $100 × 2% × 3\n   Total Interest = $100 × 0.02 × 3\n   Total Interest = $6\n\n3. **Calculate the total amount to be paid**:\n   \n   Total Amount = Principal + Total Interest\n   Total Amount = $100 + $6\n   Total Amount = $106\n\nTherefore, Mandy needs to pay Benedict $106 after 3 months.\n\nThe answer is 106.",
+      "pred": "106",
+      "gt": "106",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 188,
+      "output": "好的，让我们一步一步来分析这个问题。\n\n1. **计算每笔交易的成本和收入**：\n   - 每个麻袋的购买成本是$20。\n   - 每个麻袋从田地运输到仓库的成本是$2。\n   - 因此，每个麻袋的总成本是$20 + $2 = $22。\n\n2. **计算每笔交易的售价**：\n   - 每个麻袋的售价是$30。\n\n3. **计算每笔交易的利润**：\n   - 每个麻袋的利润是售价减去成本，即$30 - $22 = $8。\n\n4. **确定总收入和总利润的关系**：\n   - 总共获得了$400的利润。\n   - 由于每笔交易的利润是$8，因此可以通过总利润除以每笔交易的利润来计算总共卖出了多少麻袋。\n   - 所以，卖出的麻袋数量 = 总利润 / 每笔交易的利润 = $400 / $8 = 50。\n\n因此，这个商人卖出了50个麻袋。The answer is 50。",
+      "pred": "50",
+      "gt": "50",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 189,
+      "output": "好的，让我们一步一步来计算每个朋友需要支付的金额。\n\n1. **计算门票费用**：\n   - 三个人共花费了$20.25购买了3张票。\n   - 每张票的价格是 \\( \\frac{20.25}{3} = 6.75 \\) 美元。\n\n2. **计算餐饮费用**：\n   - 他们比买票少花了$4.50在食物上。\n   - 因此，他们在食物上的花费是 \\( 20.25 - 4.50 = 15.75 \\) 美元。\n   - 每人分担的食物费用是 \\( \\frac{15.75}{3} = 5.25 \\) 美元。\n\n3. **计算乘坐缆车的费用**：\n   - 他们每人乘坐了不同的缆车，每张缆车票是$33。\n   - 每人分担的缆车费用是 \\( \\frac{33}{3} = 11 \\) 美元。\n\n4. **计算总费用并分配**：\n   - 每人的总费用是门票、食物和缆车费用之和。\n   - 总费用为 \\( 6.75 + 5.25 + 11 = 23 \\) 美元。\n\n因此，每个人需要支付的金额是23美元。\n\nThe answer is 23.",
+      "pred": "23",
+      "gt": "34",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 190,
+      "output": "Sure, let's break this down step by step:\n\n1. John spends 3 hours collecting snails.\n2. There are 60 minutes in an hour.\n3. So, in 3 hours, there are \\(3 \\times 60 = 180\\) minutes.\n4. John collects 2 snails per minute.\n5. Therefore, in 180 minutes, he would collect \\(180 \\times 2 = 360\\) snails.\n\nThe answer is 360.",
+      "pred": "360",
+      "gt": "360",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 191,
+      "output": "好的，让我们一步步来解决这个问题。\n\n首先，我们知道每只蝙蝠每周需要消耗3.5磅的昆虫。那么，我们先计算出每天一只蝙蝠需要多少磅的昆虫：\n\n1周 = 7天\n所以，每只蝙蝠每天需要的昆虫量为：\\( \\frac{3.5}{7} = 0.5 \\)磅\n\n接下来，我们要计算十只蝙蝠每天需要的昆虫总量：\n\n10只蝙蝠每天需要的昆虫量为：\\( 10 \\times 0.5 = 5 \\)磅\n\n因此，十只蝙蝠每天需要5磅的昆虫。\n\nThe answer is 5.",
+      "pred": "5",
+      "gt": "5",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 192,
+      "output": "让我们一步步来分析这个问题：\n\n1. **初始数量**：汤姆开始时有50棵树。\n   \n2. **每年种植和砍伐的数量**：\n   - 每年种植10棵树。\n   - 每年砍伐2棵树。\n   - 因此，每年净增加的树木数量是 \\(10 - 2 = 8\\) 树。\n\n3. **10年内树木的变化**：\n   - 在10年内，每年净增加8棵树，所以总共增加的树木数量是 \\(8 \\times 10 = 80\\) 树。\n\n4. **10年后树木总数**：\n   - 初始树木加上10年内的增加量，即 \\(50 + 80 = 130\\) 树。\n\n5. **树木死亡的情况**：\n   - 在第10年末，30%的树木死亡。\n   - 死亡的树木数量为 \\(130 \\times 30\\% = 39\\) 树。\n\n6. **最终剩余的树木数量**：\n   - 剩余的树木数量为 \\(130 - 39 = 91\\) 树。\n\n因此，汤姆在10年后将有91棵树。The answer is 91.",
+      "pred": "91",
+      "gt": "91",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 193,
+      "output": "让我们一步步分析这个问题：\n\n1. **初始状态**：\n   - 星期一早上，有18个粉色的塑料瓶放在院子里。\n\n2. **星期二**：\n   - 周围的人们拿走了三分之一的粉色塑料瓶。\n   - 拿走的数量：\\( \\frac{1}{3} \\times 18 = 6 \\)。\n   - 剩余的数量：\\( 18 - 6 = 12 \\)。\n   - 然后他们将剩下的瓶子染成了白色，并放回了院子里。\n\n3. **星期三**：\n   - 周围的人们又增加了18个粉色的塑料瓶。\n   - 总数量变为：\\( 12 + 18 = 30 \\)。\n\n4. **星期三下午**：\n   - 我们需要比较的是白色塑料瓶和粉色塑料瓶的数量。\n   - 白色塑料瓶的数量为12个。\n   - 粉色塑料瓶的数量为18个。\n\n5. **计算差异**：\n   - 粉色塑料瓶比白色塑料瓶多的数量：\\( 18 - 12 = 6 \\)。\n\n因此，粉色塑料瓶比白色塑料瓶多6个。The answer is 6。",
+      "pred": "6",
+      "gt": "24",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 194,
+      "output": "Sure, let's break this down step by step:\n\n1. **Total Money Violet Has**: Violet has $20.\n2. **Number of Colors Needed**: She needs 5 different colors.\n3. **Cost Per Crayon**: Each crayon costs $2.\n\nNow, to find out the total cost for 5 crayons:\n\\[ \\text{Total Cost} = \\text{Number of Crayons} \\times \\text{Cost Per Crayon} \\]\n\\[ \\text{Total Cost} = 5 \\times 2 = 10 \\]\n\nSo, Violet will spend $10 on the crayons.\n\nTo find out how much money she will have left:\n\\[ \\text{Money Left} = \\text{Total Money} - \\text{Total Cost} \\]\n\\[ \\text{Money Left} = 20 - 10 = 10 \\]\n\nTherefore, Violet will have $10 left after buying the crayons.\n\nThe answer is 10.",
+      "pred": "10",
+      "gt": "10",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 195,
+      "output": "好的，让我们一步一步来解决这个问题。\n\n首先，我们知道：\n- 一个铅笔的价格是 $1.20。\n- 一个卷笔刀的价格是 $0.30。\n\n根据题目，一个笔的价格等于一个铅笔和一个卷笔刀的总价格。因此，我们先计算一个笔的价格：\n\\[ \\text{笔的价格} = \\text{铅笔的价格} + \\text{卷笔刀的价格} \\]\n\\[ \\text{笔的价格} = 1.20 + 0.30 = 1.50 \\]\n\n现在我们知道一个笔的价格是 $1.50，接下来我们要计算8个笔的总价格：\n\\[ \\text{8个笔的总价格} = 8 \\times \\text{一个笔的价格} \\]\n\\[ \\text{8个笔的总价格} = 8 \\times 1.50 = 12.00 \\]\n\n所以，8个笔的总价格是 $12.00。\n\nThe answer is 12.00.",
+      "pred": "12.00",
+      "gt": "12",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 196,
+      "output": "好的，我们来一步步分析这个问题。\n\n首先，我们知道总共有200磅的姜需要分配给40家餐厅。\n每家餐厅将获得2磅的姜。\n\n那么，总共需要的姜的数量是：\n\\[ 40 \\text{ 家餐厅} \\times 2 \\text{ 磅/家} = 80 \\text{ 磅} \\]\n\n这意味着总共使用了80磅的姜。\n\n现在，我们需要计算没有使用的姜的数量：\n\\[ 200 \\text{ 磅} - 80 \\text{ 磅} = 120 \\text{ 磅} \\]\n\n所以，没有使用的姜的数量是120磅。\n\nThe answer is 120.",
+      "pred": "120",
+      "gt": "120",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 197,
+      "output": "To find out how many children live in Soda City, we need to subtract the number of males and females from the total population.\n\nStep 1: Identify the total population.\nTotal population = 23,786\n\nStep 2: Identify the number of males.\nNumber of males = 8,417\n\nStep 3: Identify the number of females.\nNumber of females = 9,092\n\nStep 4: Calculate the number of children.\nNumber of children = Total population - Number of males - Number of females\n\nNow let's do the calculation:\n\nNumber of children = 23,786 - 8,417 - 9,092\n\nPerforming the subtraction:\n23,786 - 8,417 = 15,369\n15,369 - 9,092 = 6,277\n\nSo, there are 6,277 children in Soda City.\n\nThe answer is 6277.",
+      "pred": "6277",
+      "gt": "6277",
+      "correct": true,
+      "format_ok": true
+    },
+    {
+      "id": 198,
+      "output": "让我们一步步来分析这个问题：\n\n1. **初始数量**：伊琳最初有20张口袋妖怪卡。\n\n2. **第一个月**：伊琳增加了她原有数量的三倍，即 \\(20 \\times 3 = 60\\) 张卡。因此，一个月后，她总共有 \\(20 + 60 = 80\\) 张卡。\n\n3. **第二个月**：伊琳增加了比上个月少20张的卡，即 \\(60 - 20 = 40\\) 张卡。因此，两个月后，她总共有 \\(80 + 40 = 120\\) 张卡。\n\n4. **第三个月**：伊琳增加了前两个月增加的卡数的两倍，即 \\(80 + 60 = 140\\) 张卡的两倍，也就是 \\(140 \\times 2 = 280\\) 张卡。因此，三个月后，她总共有 \\(120 + 280 = 400\\) 张卡。\n\n综上所述，伊琳现在总共有400张口袋妖怪卡。\n\nThe answer is 400.",
+      "pred": "400",
+      "gt": "320",
+      "correct": false,
+      "format_ok": true
+    },
+    {
+      "id": 199,
+      "output": "To solve this problem, let's break it down into steps:\n\n1. **Determine the number of words edited per week**: Mark edits 1000 words each week.\n\n2. **Calculate the payment from Publisher A**: Publisher A pays 5 cents per word. So for 1000 words, the payment would be \\(1000 \\times 5 = 5000\\) cents.\n\n3. **Calculate the payment from Publisher B**: Publisher B pays double what Publisher A does per word. Therefore, for Publisher B, Mark earns \\(1000 \\times (5 \\times 2) = 1000 \\times 10 = 10000\\) cents.\n\n4. **Calculate the total earnings**: Adding the payments from both publishers gives us \\(5000 + 10000 = 15000\\) cents.\n\nSince the question asks how much Mark earns in a week, and we've calculated his total earnings correctly based on the given conditions, the answer is:\n\nThe answer is 15000.",
+      "pred": "15000",
+      "gt": "7500",
+      "correct": false,
+      "format_ok": true
+    }
+  ]
+}
