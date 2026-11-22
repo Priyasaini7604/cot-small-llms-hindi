@@ -19,6 +19,7 @@ data/                       gsm8k_200_en.json, gsm8k_200_hi.json, fewshot_en.jso
 result/                    <model_tag>_<strategy>_<lang>.json  (8 files per model, 32 total)
 analysis/                   results table and graphs
 report/                     final report and slides
+preoject_report/             report_pdf
 ```
 
 ## How to run
