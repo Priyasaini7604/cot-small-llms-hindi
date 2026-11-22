@@ -1,0 +1,17 @@
+model,strategy,en,hi,gap_en_minus_hi
+qwen0.5b,zeroshot,7.5,2.5,5.0
+qwen0.5b,fewshot,32.0,3.0,29.0
+qwen0.5b,cot,45.0,7.5,37.5
+qwen0.5b,selfcons,51.0,7.0,44.0
+qwen1.5b,zeroshot,9.5,4.5,5.0
+qwen1.5b,fewshot,8.0,6.5,1.5
+qwen1.5b,cot,72.0,31.0,41.0
+qwen1.5b,selfcons,81.0,34.5,46.5
+qwen3b,zeroshot,19.0,10.5,8.5
+qwen3b,fewshot,17.5,9.0,8.5
+qwen3b,cot,81.0,59.5,21.5
+qwen3b,selfcons,85.5,62.5,23.0
+qwen7b,zeroshot,29.5,19.0,10.5
+qwen7b,fewshot,29.5,21.0,8.5
+qwen7b,cot,90.5,67.5,23.0
+qwen7b,selfcons,92.5,76.0,16.5

@@ -1,0 +1,41 @@
+model,comparison,lang,diff,ci_low,ci_high,clear
+0.5B,CoT - zeroshot,en,37.5,30.0,45.0,yes
+0.5B,selfcons - CoT,en,6.0,-0.5,12.5,no
+0.5B,fewshot - zeroshot,en,24.5,17.5,31.5,yes
+0.5B,CoT - zeroshot,hi,5.0,1.0,9.0,yes
+0.5B,selfcons - CoT,hi,-0.5,-5.0,4.5,no
+0.5B,fewshot - zeroshot,hi,0.5,-2.5,4.0,no
+0.5B,EN - HI (zeroshot),-,5.0,1.0,9.5,yes
+0.5B,EN - HI (fewshot),-,29.0,22.0,36.0,yes
+0.5B,EN - HI (cot),-,37.5,30.5,45.0,yes
+0.5B,EN - HI (selfcons),-,44.0,37.0,51.5,yes
+1.5B,CoT - zeroshot,en,62.5,55.0,69.5,yes
+1.5B,selfcons - CoT,en,9.0,3.5,14.5,yes
+1.5B,fewshot - zeroshot,en,-1.5,-6.0,3.0,no
+1.5B,CoT - zeroshot,hi,26.5,20.0,33.5,yes
+1.5B,selfcons - CoT,hi,3.5,-2.5,9.5,no
+1.5B,fewshot - zeroshot,hi,2.0,-2.5,6.5,no
+1.5B,EN - HI (zeroshot),-,5.0,1.0,9.0,yes
+1.5B,EN - HI (fewshot),-,1.5,-3.0,6.01,no
+1.5B,EN - HI (cot),-,41.0,33.5,49.0,yes
+1.5B,EN - HI (selfcons),-,46.5,39.5,53.5,yes
+3B,CoT - zeroshot,en,62.0,54.5,69.5,yes
+3B,selfcons - CoT,en,4.5,0.0,9.0,no
+3B,fewshot - zeroshot,en,-1.5,-6.5,3.5,no
+3B,CoT - zeroshot,hi,49.0,41.5,56.5,yes
+3B,selfcons - CoT,hi,3.0,-2.5,8.5,no
+3B,fewshot - zeroshot,hi,-1.5,-5.0,2.0,no
+3B,EN - HI (zeroshot),-,8.5,3.0,14.0,yes
+3B,EN - HI (fewshot),-,8.5,3.0,14.5,yes
+3B,EN - HI (cot),-,21.5,15.0,28.0,yes
+3B,EN - HI (selfcons),-,23.0,16.5,29.5,yes
+7B,CoT - zeroshot,en,61.0,54.0,67.5,yes
+7B,selfcons - CoT,en,2.0,-0.5,5.0,no
+7B,fewshot - zeroshot,en,0.0,-5.5,5.5,no
+7B,CoT - zeroshot,hi,48.5,40.0,56.5,yes
+7B,selfcons - CoT,hi,8.5,3.0,14.0,yes
+7B,fewshot - zeroshot,hi,2.0,-3.0,7.0,no
+7B,EN - HI (zeroshot),-,10.5,5.0,16.0,yes
+7B,EN - HI (fewshot),-,8.5,2.5,14.5,yes
+7B,EN - HI (cot),-,23.0,16.5,30.0,yes
+7B,EN - HI (selfcons),-,16.5,10.5,22.5,yes
